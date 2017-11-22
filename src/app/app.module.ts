@@ -14,7 +14,7 @@ import { ButtonsComponent } from './buttons/buttons.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: '/playground'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
