@@ -1,24 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @charset "UTF-8";
-/*
-* Author: Edvins Antonovs
-* License: MIT License
-* Website: http://potatocss.com/
-*/
 
 // Import core
-@import "assets/core/variables";
-@import "assets/core/mixins";
+@import "styles/core/variables";
+@import "styles/core/mixins";
 
 // Import modules
-@import "assets/modules/global";
-@import "assets/modules/typography";
-@import "assets/modules/grid";
-@import "assets/modules/form";
-@import "assets/modules/button";
-@import "assets/modules/table";
-@import "assets/modules/list";
-@import "assets/modules/code";
-@import "assets/modules/panel";
-@import "assets/modules/label";
-@import "assets/modules/helpers";
+// @import "styles/modules/global";
+// @import "styles/modules/typography";
+// @import "styles/modules/grid";
+// @import "styles/modules/form";
+@import "styles/modules/button";
+// @import "styles/modules/table";
+// @import "styles/modules/list";
+// @import "styles/modules/code";
+// @import "styles/modules/panel";
+// @import "styles/modules/label";
+// @import "styles/modules/helpers";
