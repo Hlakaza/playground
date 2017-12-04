@@ -5,8 +5,7 @@
 		@content;
 	}
 }
-
-@mixin potatoes($count:1, $of:length($potatoes), $gutter: $gutter) {
+@mixin grids($count:1, $of:length($grids), $gutter: $gutter) {
 	width: ($count / $of) * 100% - $gutter * 2;
 }
 
@@ -30,3 +29,4 @@
 		@content;
 	}
 }
+

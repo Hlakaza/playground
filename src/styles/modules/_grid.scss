@@ -21,31 +21,29 @@
 		clear: both;
 		display: table;
 	}
-
-	.potato,
-	.potatoes {
-		margin: 8px 2%;
-		min-height: 2px;
-	}
 }
-
-.potato,
-.potatoes {
-	@include potatoes(12);
+.grid,
+.grids {
+	margin: 8px 2%;
+	min-height: 2px;
+}
+.grid,
+.grids {
+	@include grids(12);
 	float: left !important;
 }
 
-@each $count in $potatoes {
-	$index: index($potatoes, $count);
+@each $count in $grids {
+	$index: index($grids, $count);
 	.#{$count} {
 		@if ($index == 1) {
-			&.potato,
-			&.potatoes {
-				@include potatoes($index);
+			&.grid,
+			&.grids {
+				@include grids($index);
 			}
 		} @else {
-			&.potatoes {
-				@include potatoes($index);
+			&.grids {
+				@include grids($index);
 			}
 		}
 	}

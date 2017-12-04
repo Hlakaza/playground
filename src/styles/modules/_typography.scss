@@ -1,9 +1,10 @@
 /* Typography */
-
+@import '../core/_mixins';
+@import '../core/_variables';
 * {
-	font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-	font-weight: lighter;
-	line-height: 1.5;
+	font-family: $base-font-family;
+	font-weight: 400;
+	line-height: $line-height-base;
 	color: $primary-color;
 }
 
@@ -14,55 +15,30 @@ h4,
 h5,
 h6 {
 	margin: 5px 0;
-	font-weight: normal;
-	font-style: normal;
-	line-height: 1.5;
+	line-height: $line-height-base;
 	text-transform: none;
 	text-rendering: optimizeLegibility;
 }
 
 h1 {
-	font-size: 28px;
-
-	@include screen($medium) {
-		font-size: 30px;
-	}
+    color: $secondary-color;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base * 2;
+	text-transform: uppercase;
 }
-
 h2 {
-	font-size: 18px;
-
-	@include screen($medium) {
-		font-size: 26px;
-	}
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base * 1.5;
 }
 
 h3 {
-	font-size: 15px;
-
-	@include screen($medium) {
-		font-size: 22px;
-	}
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base * 1.2;
 }
 
 h4 {
-	font-size: 14px;
-
-	@include screen($medium) {
-		font-size: 15px;
-	}
-}
-
-h5 {
-	font-size: 16px;
-
-	@include screen($medium) {
-		font-size: 14px;
-	}
-}
-
-h6 {
-	font-size: 16px;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
 }
 
 blockquote {

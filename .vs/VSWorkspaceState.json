@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\buttons",
+    "\\src\\styles",
+    "\\src\\styles\\core",
+    "\\src\\styles\\modules"
+  ],
+  "SelectedNode": "\\src\\app\\app.component.scss",
+  "PreviewInSolutionExplorer": false
+}

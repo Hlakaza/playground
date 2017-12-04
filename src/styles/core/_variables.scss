@@ -1,5 +1,5 @@
-//* Variables *//
-
+﻿//* Variables *//
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 //* Breakpoints *//
 $small: 0;
 $medium: 40em;
@@ -7,10 +7,10 @@ $large: 64em;
 
 //* Grid *//
 $gutter: 2%;
-$potatoes: (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve);
-$container-max-width: 1020px;
+$grids: (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve);
+$container-max-width: 1440px;
 
-//* Colors *//
+//*Site Colors *//
 $primary-color:         #333;
 $border-color:          #ccc;
 $button-color:          #7a7a7a;
@@ -22,7 +22,13 @@ $white-color:           #fff;
 $info-color:            #3498db;
 $success-color:         #27ae60;
 $warning-color:         #f39c12;
-$danger-color:          #e74c3c;
-
+$danger-color:          #dd0000;
+$primary-button-color:  #f15a2a;
+$secondary-color:       #194484;
+$default-button-color:  #ced9e1;
 //* Fonts *//
-$base-font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+$base-font-family: "Open Sans", sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+$font-weight-base: 400;
+$font-weight-bold: 600;
