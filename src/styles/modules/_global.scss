@@ -18,7 +18,8 @@ body {
 	font-size: $font-size-base;
 	margin: 0;
 	padding: 0;
-    font-family: $base-font-family;
+	font-family: $base-font-family;
+	color: $body-color;
 }
 
 hr {
@@ -34,7 +35,7 @@ a {
 	text-decoration: underline;
 	transition: .2s ease-out;
 	transition-property: background-color, color;
-	color: $primary-color;
+	color: $body-color;
 
 	@include hover() {
 		color: $hover-color;

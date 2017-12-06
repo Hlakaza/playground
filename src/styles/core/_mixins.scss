@@ -1,12 +1,13 @@
 //* Mixins *//
-
 @mixin screen($width) {
 	@media screen and (min-width: $width) {
 		@content;
 	}
 }
 @mixin grids($count:1, $of:length($grids), $gutter: $gutter) {
-	width: ($count / $of) * 100% - $gutter * 2;
+	@include screen($large){
+		width: ($count / $of) * 100% - $gutter * 2;
+	}	
 }
 
 @mixin hover() {

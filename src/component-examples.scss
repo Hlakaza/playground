@@ -734,14 +734,6 @@ pre {
   }*/
 }
 
-.bd-content .highlight {
-  /*margin-right: (-$grid-gutter-width / 2);
-  margin-left: (-$grid-gutter-width / 2);*/
-  /*@include media-breakpoint-up(sm) {
-    margin-right: 0;
-    margin-left: 0;
-  }*/
-}
 
 .highlight pre {
   padding: 0;
@@ -756,52 +748,52 @@ pre {
   color: gray; // Effectively the base text color
 }
 
-@media screen and (max-width: 768px) {
-  .one .grids, .one.grids {
-      width: 96%;
-  }
+// @media screen and (max-width: 768px) {
+//   .one .grids, .one.grids {
+//       width: 96%;
+//   }
 
-  .two.grids {
-    width: 96%;
-  }
+//   .two.grids {
+//     width: 96%;
+//   }
 
-  .three.grids {
-    width: 96%;
-  }
+//   .three.grids {
+//     width: 96%;
+//   }
 
-  .four.grids {
-    width: 96%;
-  }
+//   .four.grids {
+//     width: 96%;
+//   }
 
-  .five.grids {
-    width: 96%;
-  }
+//   .five.grids {
+//     width: 96%;
+//   }
 
-  .six.grids {
-    width: 96%;
-  }
+//   .six.grids {
+//     width: 96%;
+//   }
 
-  .seven.grids {
-    width: 96%;
-  }
+//   .seven.grids {
+//     width: 96%;
+//   }
 
-  .eight.grids {
-    width: 96%;
-  }
+//   .eight.grids {
+//     width: 96%;
+//   }
 
-  .nine.grids {
-    width: 96%;
-  }
+//   .nine.grids {
+//     width: 96%;
+//   }
 
-  .ten.grids {
-    width: 96%;
-  }
+//   .ten.grids {
+//     width: 96%;
+//   }
 
-  .eleven.grids {
-    width: 96%;
-  }
+//   .eleven.grids {
+//     width: 96%;
+//   }
 
-  .twelve.grids {
-    width: 96%;
-  }
-}
+//   .twelve.grids {
+//     width: 96%;
+//   }
+// }

@@ -1,5 +1,6 @@
 /* Form */
-
+@import '../core/_mixins';
+@import '../core/_variables';
 .input_text,
 input[type="text"],
 input[type="password"],
@@ -14,8 +15,8 @@ input[type="color"],
 select,
 textarea {
 	background-color: $white-color;
-	border: 1px solid $primary-color;
-	color: $primary-color;
+	border: 1px solid $body-color;
+	color: $body-color;
 	border-radius: 4px;
 	display: block;
 	font-size: 16px;
@@ -55,17 +56,17 @@ label {
 
 
 ::-webkit-input-placeholder {
-	color: $primary-color;
+	color: $body-color;
 }
 
 :-moz-placeholder {
-	color: $primary-color;
+	color: $body-color;
 }
 
 ::-moz-placeholder {
-	color: $primary-color;
+	color: $body-color;
 }
 
 :-ms-input-placeholder {
-	color: $primary-color;
+	color: $body-color;
 }

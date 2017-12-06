@@ -1,5 +1,4 @@
-/* Grid */
-
+// grid
 .container {
 	width: 96%;
 	position: relative;
@@ -21,12 +20,16 @@
 		clear: both;
 		display: table;
 	}
+
 }
+
 .grid,
 .grids {
 	margin: 8px 2%;
 	min-height: 2px;
+	width: 96%;
 }
+
 .grid,
 .grids {
 	@include grids(12);
