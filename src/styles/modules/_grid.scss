@@ -32,21 +32,21 @@
 
 .grid,
 .grids {
-	@include grids(12);
+	@include grid(12);
 	float: left !important;
 }
 
-@each $count in $grids {
-	$index: index($grids, $count);
+@each $count in $grid {
+	$index: index($grid, $count);
 	.#{$count} {
 		@if ($index == 1) {
 			&.grid,
-			&.grids {
-				@include grids($index);
+			&.grid {
+				@include grid($index);
 			}
 		} @else {
-			&.grids {
-				@include grids($index);
+			&.grid {
+				@include grid($index);
 			}
 		}
 	}

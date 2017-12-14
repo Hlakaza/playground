@@ -10,7 +10,6 @@
 	overflow-x: hidden;
 	background: rgba(0, 0, 0, 0.5);
 	opacity: 0;
-	visibility: hidden;
 	transition: opacity .15s linear;
 
 	&.open {
@@ -21,13 +20,16 @@
 	.modal-dialog {
 		position: relative;
 		margin: 10px;
-		transform: translateY(-25%);
-		max-width: 500px;
+		// transform: translateY(-25%);
+		width: 80%;
+		left: 50%;
+		margin-left: -40%;
 		transition: transform .3s ease-out;
 
 		@include screen($medium) {
-			margin: 30px auto;
-			max-width: 500px;
+		    width: 80%;
+			left: 50%;
+			margin-left: -40%;
 		}
 
 		.modal.open & {

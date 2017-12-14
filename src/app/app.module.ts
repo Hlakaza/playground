@@ -7,6 +7,9 @@ import { TypographyComponent } from './typography/typography.component';
 import { FormsComponent } from './forms/forms.component';
 import { GridComponent } from './grid/grid.component';
 import { ModalsComponent } from './modals/modals.component';
+import { LoginComponent } from './login/login.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { TabComponent } from './tabs/tab.component';
 
 
 
@@ -18,6 +21,9 @@ import { ModalsComponent } from './modals/modals.component';
     FormsComponent,
     GridComponent,
     ModalsComponent,
+    LoginComponent,
+    TabsComponent,
+    TabComponent,
   ],
   imports: [
     BrowserModule,

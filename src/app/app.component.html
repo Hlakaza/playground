@@ -1,43 +1,67 @@
 <div class="container">
   <div id="header">
     <div class="row">
-      <div class="twelve grids">
+      <div class="col-twelve grid">
         <h1>Global Playground</h1>
         <h3>Simple CSS framework for Web Team.</h3>
       </div>
     </div>
     <div class="row">
-        <div class="three grids">
-          <button class="btn btn-full btn-expanded" (click)="panelName = 'buttons'">Buttons</button>
-        </div>      
-        <div class="three grids">
-          <button class="btn btn-expanded" (click)="panelName = 'forms'">Forms</button>
-        </div>
-        <div class="three grids">
-            <button class="btn btn-expanded" (click)="panelName = 'typography'">Typography</button>
+        <div class="col-twelve grid tabs-container">
+          <app-tabs [vertical]="true">
+             
+              <app-tab title="Buttons">
+                  <app-buttons></app-buttons>
+              </app-tab>
+              <app-tab title="Forms">
+                  <app-forms></app-forms>
+              </app-tab>
+              <app-tab title="Typography">
+                  <app-typography></app-typography>
+              </app-tab>
+              <app-tab title="Grid">
+                  <app-grid></app-grid>
+              </app-tab>
+              <app-tab title="Modals">
+                  <app-modals></app-modals>
+              </app-tab>
+         
+            </app-tabs>
+     
           </div>
-        <div class="three grids">
-            <button class="btn btn-expanded" (click)="panelName = 'grid'">Grid</button>
-          </div>
-      </div>
-      <div class="row" [ngSwitch]="panelName">
-          <section *ngSwitchCase="'buttons'">
-            <app-buttons></app-buttons>
-          </section>
-          <section *ngSwitchCase="'forms'">
-            <app-forms></app-forms>
-          </section>
-          <section *ngSwitchCase="'typography'">
-              <app-typography></app-typography>
-         </section>
-          <section *ngSwitchCase="'grid'">
-              <app-grid></app-grid>
-            </section>
-        </div>
-  </div>
+          <!-- <app-tabs #t>
+              <app-tab title="1">
+                <app-reg-step-1 [currencyList]="currencyList" [countryList]="countryList" (switchStep)="stepChange($event)" (regValues)="regValues($event)"></app-reg-step-1>
+                <button class="btn btn-primary" (click)="t.selectTab(1)">Next</button>
+              </app-tab>
+              <app-tab title="2" [disabled]="!(currentStep >= 2)">
+                <app-reg-step-2 [countryList]="countryList" (switchStep)="stepChange($event)" (regValues)="regValues($event)"></app-reg-step-2>
+                <button class="btn btn-primary" (click)="t.selectTab(0)">Back</button>
+                <button class="btn btn-primary" (click)="t.selectTab(2)">Next</button>
+              </app-tab>
+              <app-tab title="3" [disabled]="!(currentStep >= 3)">
+                <app-reg-step-3 [countryList]="countryList" (switchStep)="stepChange($event)" (regValues)="regValues($event)"></app-reg-step-3>
+                <button class="btn btn-primary" (click)="t.selectTab(1)">Back</button>
+                <button class="btn btn-primary" (click)="t.selectTab(3)">Next</button>
+              </app-tab>
+              <app-tab title="4" [disabled]="!(currentStep >= 4)" >
+                <app-reg-step-4 [countryList]="countryList" (regValues)="regValues($event)"></app-reg-step-4>
+                <button type="button" class="btn btn-primary">Submit</button>
+              </app-tab>
+            </app-tabs> -->
+    </div>
 
- 
+  </div>
 </div>
+<app-modals #login>
+  <ng-template #modalHeader>
+    <h2>Login</h2>
+  </ng-template>
+  <ng-template #modalBody>
+    <app-login></app-login>
+  </ng-template>
+  <ng-template #modalFooter></ng-template>
+</app-modals>
 
 
 

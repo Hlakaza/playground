@@ -4,7 +4,7 @@
 		@content;
 	}
 }
-@mixin grids($count:1, $of:length($grids), $gutter: $gutter) {
+@mixin grid($count:1, $of:length($grid), $gutter: $gutter) {
 	@include screen($large){
 		width: ($count / $of) * 100% - $gutter * 2;
 	}	

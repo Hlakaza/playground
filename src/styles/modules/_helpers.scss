@@ -16,12 +16,18 @@
 	text-align: justify;
 }
 
-.float-left {
-	float: left;
+.clearfix {
+    clear: both;
+    display: block;
+    overflow: hidden;
 }
 
-.float-right {
-	float: right;
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
 }
 
 .font-light {
@@ -33,30 +39,26 @@
 }
 
 .font-bold {
-	font-weight: bold;
+	font-weight: 600;
 }
 
-.allow-overflow {
-	overflow: auto;
-
-	&-x {
+.allow-overflow{
+	&.x {
 		overflow-y: auto;
 	}
 
-	&-y {
+	&.y {
 		overflow-y: auto;
 	}
 }
 
 .hide-overflow,
 .forbid-overflow {
-	overflow: hidden;
-
-	&-x {
+	&.x {
 		overflow-y: hidden;
 	}
 
-	&-y {
+	&.y {
 		overflow-y: hidden;
 	}
 }
