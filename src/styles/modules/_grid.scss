@@ -4,13 +4,11 @@
 	position: relative;
 	max-width: $container-max-width;
 	margin: 0 auto;
-
 	@include after() {
 		clear: both;
 		display: table;
 	}
 }
-
 .row {
 	position: relative;
 	width: 100%;
@@ -22,14 +20,12 @@
 	}
 
 }
-
 .grid,
 .grids {
 	margin: 8px 2%;
 	min-height: 2px;
 	width: 96%;
 }
-
 .grid,
 .grids {
 	@include grid(12);
