@@ -4,11 +4,10 @@
 		@content;
 	}
 }
+@mixin grid($count:1, $of:length($grid), $gutter: $gutter) {
 
-@include screen($large){
-		@mixin grid($count:1, $of:length($grid), $gutter: $gutter) {
 		width: ($count / $of) * 100% - $gutter * 2;
-	}	
+
 }
 
 @mixin hover() {

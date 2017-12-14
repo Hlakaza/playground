@@ -35,7 +35,7 @@
 	@include grid(12);
 	float: left !important;
 }
-
+@include screen($large){
 @each $count in $grid {
 	$index: index($grid, $count);
 	.#{$count} {
@@ -50,4 +50,5 @@
 			}
 		}
 	}
+}
 }
