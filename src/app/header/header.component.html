@@ -21,24 +21,24 @@
           <a class="navbar-brand" href="./">
             <img src="https://cms1.gmgamingsystems.com/medialibraries/vogliadivincere.it/vogliadivincere.it/DV/vdv_logo.png" alt="VDV">
           </a>
-          <button type="button" class="ham-burger pull-right" (click)="show=!show">
+          <button type="button" class="ham-burger pull-right" (click)="toggle=!toggle">
               <span></span>
               <span></span>
               <span></span>
           </button>
       </div>
-      <div class="col-nine grid navigation">
+      <div class="col-nine grid navigation" *ngIf="!toggle">
           <ul class="inline none nav">
             <li class="nav-item"><a href="#">Slot</a></li>
             <li class="nav-item"><a href="#">Casinovideo</a></li>
             <li class="nav-item"><a href="#">Poker</a></li>
             <li class="nav-item"><a href="#">Promozion</a></li>
           </ul>
-          <div class="pull-right buttons" *ngIf="!toggle">
+          <div class="pull-right buttons" *ngIf="!show">
             <button type="button" class="btn btn-full" (click)="login.open()">Login</button>
             <button type="button" class="btn btn-primary" (click)="register.open()">Register</button>
           </div>
-          <div class="pull-right buttons" *ngIf="toggle">
+          <div class="pull-right buttons" *ngIf="show">
             <button type="button" class="btn btn-secondary" (click)="account.open()">Bank</button>
             <button type="button" class="btn btn-secondary" (click)="account.open()">My Account</button>
           </div>
