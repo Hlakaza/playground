@@ -10,6 +10,7 @@ import { ModalsComponent } from './modals/modals.component';
 import { LoginComponent } from './login/login.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tabs/tab.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -24,6 +25,7 @@ import { TabComponent } from './tabs/tab.component';
     LoginComponent,
     TabsComponent,
     TabComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

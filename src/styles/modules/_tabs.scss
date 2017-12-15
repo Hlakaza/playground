@@ -2,13 +2,6 @@
 //   border: 1px solid $secondary-color;
 //   margin: -1px;
 // }
-.active {
-    color: #555;
-    cursor: default;
-    background-color: #fff;
-    border: 1px solid $secondary-color;
-}
-
 .nav {
     padding: 0;
     margin: 0;
@@ -26,6 +19,7 @@
         border-bottom: transparent;
         margin-bottom: -1px;
     }
+    
 }
 
 .nav-tabs-vertical {
@@ -37,6 +31,10 @@
 
 
     .active {
+        color: #555;
+        cursor: default;
+        background-color: #fff;
+        border: 1px solid $secondary-color;
         border-right: transparent;
         margin-right: -1px;
         color: $secondary-color;

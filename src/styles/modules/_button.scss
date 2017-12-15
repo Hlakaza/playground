@@ -9,7 +9,6 @@
 	line-height: 1;
 	cursor: pointer;
 	border-radius: 4px;
-	margin: 0 0 20px 0;
 	position: relative;
 	vertical-align: middle;
 	text-decoration: none;
@@ -17,7 +16,7 @@
 	transition-property: background-color, color;
 	background-color: transparent;
 	color: $secondary-color;
-	border: 1px solid $default-button-color;
+	border: 1px solid $default-color;
 	text-transform: uppercase;
 	font-weight: $font-weight-base;
 	@include screen($medium) {
@@ -25,15 +24,15 @@
 		font-size: $font-size-base;
 	}
 	@include hover() {
-		background-color: $default-button-color;
+		background-color: $default-color;
 		color: $secondary-color;
 	}
 }
 
 .btn-full {
-	background-color: $default-button-color;
+	background-color: $default-color;
 	color: $secondary-color;
-	border: 1px solid $default-button-color;
+	border: 1px solid $default-color;
 
 	@include hover() {
 		background-color: transparent;

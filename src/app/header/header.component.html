@@ -1,0 +1,48 @@
+<nav class="navbar navbar-light bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-twelve grid">
+          <div class="text-center">
+              <a href="./">
+                <img class="vertical-align-m" src="https://www.vogliadivincere.it/medialibraries/vogliadivincere.it/vogliadivincere.it/DV/18_vdv.png" alt="">
+              </a>
+              Il gioco è vietato ai minori di 18 anni e può causare dipendenza. Puoi consultare le probabilità di vincita
+              <a href="http://www.vogliadivincere.it/giochi/percentuali-di-pagamento/" target="_blank">qui</a> o sul sito
+              <a href="http://www.aams.gov.it/" target="_blank">www.aams.gov.it.</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav class="navbar bg-white navbar-border-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-three grid">
+          <a class="navbar-brand" href="./">
+            <img src="https://cms1.gmgamingsystems.com/medialibraries/vogliadivincere.it/vogliadivincere.it/DV/vdv_logo.png" alt="VDV">
+          </a>
+          <button type="button" class="ham-burger pull-right" (click)="show=!show">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+      </div>
+      <div class="col-nine grid navigation">
+          <ul class="inline none nav">
+            <li class="nav-item"><a href="#">Slot</a></li>
+            <li class="nav-item"><a href="#">Casinovideo</a></li>
+            <li class="nav-item"><a href="#">Poker</a></li>
+            <li class="nav-item"><a href="#">Promozion</a></li>
+          </ul>
+          <div class="pull-right buttons" *ngIf="!toggle">
+            <button type="button" class="btn btn-full" (click)="login.open()">Login</button>
+            <button type="button" class="btn btn-primary" (click)="register.open()">Register</button>
+          </div>
+          <div class="pull-right buttons" *ngIf="toggle">
+            <button type="button" class="btn btn-secondary" (click)="account.open()">Bank</button>
+            <button type="button" class="btn btn-secondary" (click)="account.open()">My Account</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</nav>

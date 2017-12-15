@@ -1,5 +1,6 @@
+<div id="header">
+  <app-header></app-header>
 <div class="container">
-  <div id="header">
     <div class="row">
       <div class="col-twelve grid">
         <h1>Global Playground</h1>
@@ -29,28 +30,7 @@
             </app-tabs>
      
           </div>
-          <!-- <app-tabs #t>
-              <app-tab title="1">
-                <app-reg-step-1 [currencyList]="currencyList" [countryList]="countryList" (switchStep)="stepChange($event)" (regValues)="regValues($event)"></app-reg-step-1>
-                <button class="btn btn-primary" (click)="t.selectTab(1)">Next</button>
-              </app-tab>
-              <app-tab title="2" [disabled]="!(currentStep >= 2)">
-                <app-reg-step-2 [countryList]="countryList" (switchStep)="stepChange($event)" (regValues)="regValues($event)"></app-reg-step-2>
-                <button class="btn btn-primary" (click)="t.selectTab(0)">Back</button>
-                <button class="btn btn-primary" (click)="t.selectTab(2)">Next</button>
-              </app-tab>
-              <app-tab title="3" [disabled]="!(currentStep >= 3)">
-                <app-reg-step-3 [countryList]="countryList" (switchStep)="stepChange($event)" (regValues)="regValues($event)"></app-reg-step-3>
-                <button class="btn btn-primary" (click)="t.selectTab(1)">Back</button>
-                <button class="btn btn-primary" (click)="t.selectTab(3)">Next</button>
-              </app-tab>
-              <app-tab title="4" [disabled]="!(currentStep >= 4)" >
-                <app-reg-step-4 [countryList]="countryList" (regValues)="regValues($event)"></app-reg-step-4>
-                <button type="button" class="btn btn-primary">Submit</button>
-              </app-tab>
-            </app-tabs> -->
     </div>
-
   </div>
 </div>
 <app-modals #login>
@@ -62,6 +42,4 @@
   </ng-template>
   <ng-template #modalFooter></ng-template>
 </app-modals>
-
-
 

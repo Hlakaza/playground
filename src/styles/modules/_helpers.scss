@@ -1,5 +1,4 @@
 /* Helpers */
-
 .text-center {
 	text-align: center;
 }
@@ -61,4 +60,31 @@
 	&.y {
 		overflow-y: hidden;
 	}
+}
+.vertical-align-m{
+	vertical-align: middle;
+}
+.bg-white{
+	background-color: $white-color;
+}
+.bg-primary{
+	background-color: #efefef;
+}
+.no-pad-all{
+ padding: 0;
+}
+.no-pad-left{
+	padding-left: 0;
+}
+.no-pad-right{
+	margin-right: 0;
+}
+.no-marg-all{
+	margin: 0;
+}
+.no-marg-left{
+	margin-left: 0;
+}
+.no-marg-right{
+	margin-right: 0;
 }
