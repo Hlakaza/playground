@@ -27,8 +27,7 @@
         &:hover, &.active{
             @include screen($large){   
                 border-bottom: 2px solid $body-color; 
-                a{
-                   
+                a{   
                     color: $primary-color;
                 }
             }
@@ -61,9 +60,14 @@
     // display: none;
     position: absolute;
     background-color: #ffff;
-    top: 85px;
+    top: 76px;
     z-index: 99;
     height: 300px;
+    left: -2%;
+    right: -2%;
+    padding: 0;
+    margin: 0 !important;
+    width: 105% !important;
 }
 .ham-burger{
     display: block;
@@ -80,9 +84,6 @@
     float: none;
 }
 }
-
-
-
 
 .ham-burger
 {
