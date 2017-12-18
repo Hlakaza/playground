@@ -13,7 +13,7 @@
             border-bottom: 1px solid $default-color; 
         }
         @include screen($large){
-        padding-bottom: 35px;
+        padding-bottom: 27px;
         line-height: 60px;
         border-bottom: 2px solid transparent;
         }
@@ -51,7 +51,6 @@
     border-bottom: 2px solid $default-color;
 }
 
-///////////////////////////////////////////////////
 @media (max-width: $large){
     .buttons{
       display: none;

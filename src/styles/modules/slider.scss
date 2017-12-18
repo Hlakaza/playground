@@ -1,0 +1,42 @@
+.slider{
+    .prev {
+        left: 5%;
+    }
+    .next{
+        right: 5%;
+    }
+} 
+.nav-vertical.nav-slider-right {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    border-bottom: 0;
+    right: 5%;
+}
+
+.slider .nav-vertical .nav-item{
+    border: 1px solid #fff;
+    height: 8px;
+    width: 25px;
+    float: left;
+    margin: 2px;
+    list-style: none;
+    cursor: pointer;
+}
+.slider .nav-vertical .nav-item .nav-link:hover, .slider .nav-vertical .nav-item .nav-link.active{
+    border: 1px solid transparent;
+    height: 8px;
+    width: 25px;
+    float: left;
+    margin: 0 2px;
+    list-style: none;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 0;
+    margin-left: -1px
+}
+.slider .next, .slider .prev{
+    background: transparent;
+    text-decoration:none;
+    font-size: 20px
+}

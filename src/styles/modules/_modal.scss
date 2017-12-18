@@ -11,44 +11,22 @@
 	background: rgba(0, 0, 0, 0.5);
 	opacity: 0;
 	transition: opacity .15s linear;
-
 	&.open {
 		opacity: 1;
 		visibility: visible;
 	}
-
 	.modal-dialog {
 		position: relative;
-		margin: 10px;
-		// transform: translateY(-25%);
-		width: 80%;
-		left: 50%;
-		margin-left: -40%;
-		transition: transform .3s ease-out;
-
-		@include screen($medium) {
-		    width: 80%;
-			left: 50%;
-			margin-left: -40%;
-		}
-
-		.modal.open & {
-			transform: translateY(0%);
-		}
-
-		.modal.small & {
-			@include screen($medium) {
-				max-width: 300px;
-			}
-		}
-
-		.modal.large & {
-			@include screen($large) {
-				max-width: 800px;
-			}
-		}
+		margin: 10px auto;
+		width: 60%;
+	}
+	.modal-small{
+	   max-width: 25%;	
 	}
 
+	.modal-large{
+			max-width: 80%;		
+	}
 	.modal-content {
 		position: relative;
 		width: 100%;
@@ -58,20 +36,13 @@
 		border-radius: 5px;
 	}
 
-	.close-button {
-		position: absolute;
-		right: 15px;
-		top: 10px;
+	.close, .modal-close{
 		background-color: transparent;
 		font-size: 24px;
-		font-weight: bold;
 		color: $button-color;
 		border: none;
 		cursor: pointer;
-
-		@include hover() {
-			color: $button-hover-color;
-		}
+        float: right; 
 	}
 
 	.modal-header,
@@ -119,6 +90,12 @@
 
 		.button {
 			margin-right: 5px;
+		}
+	}
+
+	.modal-header{
+		h2{
+			display: inline-block;
 		}
 	}
 }

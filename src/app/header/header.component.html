@@ -46,3 +46,21 @@
     </div>
   </div>
 </nav>
+<app-modals #login>
+    <ng-template #modalHeader>
+      <h2>Login</h2>
+    </ng-template>
+    <ng-template #modalBody>
+      <app-login></app-login>
+    </ng-template>
+    <ng-template #modalFooter></ng-template>
+  </app-modals>
+  <app-modals #register>
+      <ng-template #modalHeader>
+        <h2>Login</h2>
+      </ng-template>
+      <ng-template #modalBody>
+        <app-login></app-login>
+      </ng-template>
+      <ng-template #modalFooter></ng-template>
+    </app-modals>

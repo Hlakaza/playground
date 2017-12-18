@@ -1,7 +1,3 @@
-// .tabs-container{
-//   border: 1px solid $secondary-color;
-//   margin: -1px;
-// }
 .nav {
     padding: 0;
     margin: 0;
@@ -11,10 +7,7 @@
 .nav-tabs {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 1px solid #CCC;
-    max-height: 38px;
-    margin-bottom: 1em;
-
+    border-bottom: 1px solid $secondary-color;
     .active {
         border-bottom: transparent;
         margin-bottom: -1px;
@@ -25,7 +18,6 @@
 .nav-tabs-vertical {
     float: left;
     border-right: 1px solid $secondary-color;
-    // max-width: 200px;
     margin-right: -1px;
     background: $white-color;
 
@@ -48,20 +40,24 @@
 .nav-link {
     position: relative;
     display: block;
-    padding: 10px 15px;
+    padding: 10px 35px;
     min-width: 74px;
     margin-right: 0;
-    margin-bottom: 3px;
     text-decoration: none;
     color: inherit;
+    margin-right: -1px;
 }
 
 .tab-content {
     overflow: hidden;
     display: block;
     // padding: 0 1em;
-    border-left: 1px solid $secondary-color;
+    border: 1px solid $secondary-color;
+    border-top: 0;
 
+}
+[ng-reflect-vertical="true"] .tab-content {
+       border-left: 1px solid $secondary-color;
 }
 
 // .nav-item {
@@ -72,11 +68,13 @@
     border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
+    margin-bottom: -1px;
 }
 
-.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-    border-color: #e9ecef #e9ecef #ddd;
+.nav-tabs .nav-link, .nav-tabs .nav-link, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: $secondary-color;
 }
+
 
 .nav-tabs .nav-link.disabled {
     color: #868e96;
@@ -84,13 +82,15 @@
     border-color: transparent;
 }
 
-.nav-tabs .nav-link.active,
+
 .nav-tabs .nav-item.show .nav-link {
     color: #495057;
-    background-color: $primary-color;
-    border-color: $primary-color;
+    background-color: transparent;
+    border-color: $body-color;
 }
-
+.nav-tabs .nav-link.active{
+    border-bottom: 1px solid #fff;
+}
 .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
