@@ -9,8 +9,8 @@
     </div>
     <div class="row">
         <div class="col-twelve grid tabs-container">
-          <app-tabs>
-           <!-- <app-tabs [vertical]="true"> -->
+          <!-- <app-tabs> -->
+           <app-tabs [vertical]="true">
               <app-tab title="Buttons">
                   <app-buttons></app-buttons>
               </app-tab>
@@ -24,7 +24,6 @@
                   <app-grid></app-grid>
               </app-tab>
               <app-tab title="Modals">
-                  <button type="button" class="btn btn-outline-dark" (click)="login()">open</button>
                   <app-modals></app-modals>
               </app-tab>
             </app-tabs>

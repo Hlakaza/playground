@@ -35,7 +35,7 @@ a {
 	text-decoration: underline;
 	transition: .2s ease-out;
 	transition-property: background-color, color;
-	color: $body-color;
+	color: $primary-color;
 
 	@include hover() {
 		color: $hover-color;
