@@ -22,12 +22,12 @@
     display: block;
     padding: 10px 30px 10px 0;
     margin-right: 25px;
-    border-bottom: 3px solid $default-color;
+    border-bottom: 0;
     text-decoration: none;
     text-align: left;
 }
 .nav-tabs .nav-link.active {
-      border-bottom: 3px solid $primary-color;
+      border-bottom: 0;
 }
 .nav-tabs-vertical {
     @include screen($large){
