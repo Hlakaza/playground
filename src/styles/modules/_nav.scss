@@ -1,5 +1,7 @@
 .navbar {
-    padding: .5rem 0;
+    @include screen($large){
+        padding: 0.5rem 0;
+    }
     .nav{
         @include screen($large){
         margin-left: 50px;
@@ -31,42 +33,47 @@
                     color: $primary-color;
                 }
             }
-           
         }   
     } 
     .buttons{
         margin-top: 7px;
     }
 }
-
-
 .ham-burger{
     display: none;
  }
-.navbar-brand{
+ .navbar-brand {
     display: inline-block;
     vertical-align: middle;
+    width: 65%;
 }
 .navbar-border-bottom{
     border-bottom: 2px solid $default-color;
 }
+@media (max-width: 425px){
+    .navbar-brand {
+        padding: 20px 0;
+    }
+}
 
 @media (max-width: $large){
-    .buttons{
-      display: none;
+    // .buttons{
+    //   display: none;
+    // }
+    .navbar{
+        height: 100px
     }
 .navigation{
-    // display: none;
     position: absolute;
     background-color: #ffff;
-    top: 78px;
+    top: 94px;
     z-index: 99;
     height: 300px;
     left: -2%;
     right: -2%;
     padding: 0;
     margin: 0 !important;
-    width: 105% !important;
+    width: 103% !important;
 }
 .ham-burger{
     display: block;
@@ -84,9 +91,8 @@
 }
 }
 
-.ham-burger
-{
-  padding-top: 15px;
+.ham-burger{
+  padding: 34px 0;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -97,9 +103,7 @@
       outline: none;
   }
 }
-
-.ham-burger input
-{
+.ham-burger input{
   display: block;
   width: 40px;
   height: 32px;
@@ -111,12 +115,10 @@
   z-index: 2; /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
-
 /*
  * Just a quick hamburger
  */
-.ham-burger span
-{
+.ham-burger span{
   display: block;
   width: 33px;
   height: 4px;
@@ -126,52 +128,14 @@
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
 }
 
-.ham-burger span:first-child
-{
+.ham-burger span:first-child{
   transform-origin: 0% 0%;
 }
 
-.ham-burger span:nth-last-child(2)
-{
+.ham-burger span:nth-last-child(2){
   transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-.ham-burger input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-.ham-burger input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-.ham-burger input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-.ham-burger input:checked ~ ul
-{
-  transform: none;
 }
 
 }

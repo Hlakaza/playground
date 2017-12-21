@@ -10,92 +10,96 @@
 	overflow-x: hidden;
 	background: rgba(0, 0, 0, 0.5);
 	opacity: 0;
-	transition: opacity .15s linear;
 	&.open {
 		opacity: 1;
 		visibility: visible;
 	}
-	.modal-dialog {
-		position: relative;
-		margin: 10px auto;
-		width: 60%;
-	}
-	.modal-small{
-	   max-width: 25%;	
-	}
 
+}
+.modal-dialog {
+	position: relative;
+	margin: 10px auto;
+	width: 60%;
+}
+.modal-large{
+	width: 80%;		
+}
+.modal-small{
+   width: 25%;	
+}
+.modal-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: $white-color;
+	border: 1px solid $border-color;
+	border-radius: 5px;
+}
+
+.close, .modal-close{
+	background-color: transparent;
+	font-size: 24px;
+	color: $button-color;
+	border: none;
+	cursor: pointer;
+	float: right; 
+}
+.modal-header,
+.modal-body,
+.modal-footer {
+	position: relative;
+	padding: 15px 0;
+
+	& > * {
+		margin: 0;
+	}
+}
+
+.modal-header {
+	& + .modal-body {
+		@include after() {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 1px;
+			width: 100%;
+			background-color: $bg-color;
+		}
+	}
+}
+
+.modal-body {
+	& + .modal-footer {
+		@include after() {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 1px;
+			width: 100%;
+			background-color: $bg-color;
+		}
+	}
+}
+
+.modal-footer {
+	display: flex;
+	justify-content: flex-end;
+
+	.button {
+		margin-right: 5px;
+	}
+}
+
+.register-modal .tab-content{
+	padding: 0
+}
+
+@media (max-width: 425px){
+	.modal-small,
+	.modal-dialog,
 	.modal-large{
-			max-width: 80%;		
-	}
-	.modal-content {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		background-color: $white-color;
-		border: 1px solid $border-color;
-		border-radius: 5px;
-	}
-
-	.close, .modal-close{
-		background-color: transparent;
-		font-size: 24px;
-		color: $button-color;
-		border: none;
-		cursor: pointer;
-        float: right; 
-	}
-
-	.modal-header,
-	.modal-body,
-	.modal-footer {
-		position: relative;
-		padding: 15px;
-
-		& > * {
-			margin: 0;
-		}
-	}
-
-	.modal-header {
-		& + .modal-body {
-			@include after() {
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				height: 1px;
-				width: 100%;
-				background-color: $bg-color;
-			}
-		}
-	}
-
-	.modal-body {
-		& + .modal-footer {
-			@include after() {
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				height: 1px;
-				width: 100%;
-				background-color: $bg-color;
-			}
-		}
-	}
-
-	.modal-footer {
-		display: flex;
-		justify-content: flex-end;
-
-		.button {
-			margin-right: 5px;
-		}
-	}
-
-	.modal-header{
-		h2{
-			display: inline-block;
-		}
-	}
+		width: 100%;	
+	 }	
 }

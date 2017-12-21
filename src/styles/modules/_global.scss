@@ -2,35 +2,6 @@
 @import'../core/mixins';
 @import'../core/variables';
 /* Global styles */
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-	/* IE 8+ to use box-sizing, < IE 9 support is pretty much void at this point */
-}
-html,
-body {
-	height: 100%;
-	width: 100%;
-	font-size: $font-size-base;
-	margin: 0;
-	padding: 0;
-	font-family: $base-font-family;
-	color: $body-color;
-	@media (max-width: $medium){
-		font-size: $font-size-base * 0.9;
-	}
-}
-
-hr {
-	position: relative;
-	width: 60%;
-	margin: 30px auto;
-	border: solid $border-color;
-	border-width: 1px 0 0;
-	clear: both;
-}
-
 a {
 	text-decoration: underline;
 	transition: .2s ease-out;
