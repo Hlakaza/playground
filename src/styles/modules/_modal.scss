@@ -91,6 +91,13 @@
 		margin-right: 5px;
 	}
 }
+.modal-title{
+   padding-top: 5px;
+   padding-bottom: 5px
+}
+.modal-open{
+   overflow: hidden;
+}
 @media (max-width: 425px){
 	.modal-small,
 	.modal-dialog,

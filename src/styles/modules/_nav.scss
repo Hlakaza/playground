@@ -45,12 +45,12 @@
  .navbar-brand {
     display: inline-block;
     vertical-align: middle;
-    width: 65%;
+    width: 250px;
 }
 .navbar-border-bottom{
     border-bottom: 2px solid $default-color;
 }
-@media (max-width: 425px){
+@media (max-width: $large){
     .navbar-brand {
         padding: 20px 0;
     }
