@@ -115,6 +115,12 @@
 	text-decoration: none;
 	border: 0;
 	background: none;
+	@include hover() {
+		background: none;
+		color: $body-color;
+		border:0;
+		text-decoration: underline;
+	}
 }
 
 .btn-expanded {
