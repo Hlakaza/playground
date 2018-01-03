@@ -1,0 +1,49 @@
+  <!-- <div _ngcontent-c4="" class="slider clearfix">
+  <ul _ngcontent-c4="" appsliderhandler="" class="slider-ul clearfix"> -->
+    <!--bindings={
+  "ng-reflect-ng-for-of": ""
+}-->
+<!-- <li _ngcontent-c4="" class="slider-li" ng-reflect-klass="slider-li" ng-reflect-ng-class=",">
+      <iframe _ngcontent-c4="" frameborder="0" id="motd-iframe-0" src="https://api2.dmgamingsystems.com/ContentParser/Index/GetContent/20161222111240_Test_MOTD_With_Opt_In_Launch_and_Overlay/template_IT.html?accountid=fe727a15-9a50-4f63-8695-a6896a71cb34&amp;brandcode=RV&amp;languagecode=IT&amp;motdid=f9b2e1eb-4e64-4ad8-bed6-7f1056b19857"></iframe>
+    </li><li _ngcontent-c4="" class="slider-li" ng-reflect-klass="slider-li" ng-reflect-ng-class=",">
+      <iframe _ngcontent-c4="" frameborder="0" id="motd-iframe-1" src="https://api2.dmgamingsystems.com/ContentParser/Index/GetContent/20161220130801_App_Deep_Linking_Default_MOTD_2/template_IT.html?accountid=fe727a15-9a50-4f63-8695-a6896a71cb34&amp;brandcode=RV&amp;languagecode=IT&amp;motdid=0828f623-c668-4d7a-9631-69698b86a825"></iframe>
+    </li><li _ngcontent-c4="" class="slider-li" ng-reflect-klass="slider-li" ng-reflect-ng-class=",">
+      <iframe _ngcontent-c4="" frameborder="0" id="motd-iframe-2" src="https://api2.dmgamingsystems.com/ContentParser/Index/GetContent/20161220112443_App_Deep_Linking_Default_MOTD/template_IT.html?accountid=fe727a15-9a50-4f63-8695-a6896a71cb34&amp;brandcode=RV&amp;languagecode=IT&amp;motdid=f3951400-1bdd-45c1-80ad-8b8a71300475"></iframe>
+    </li><li _ngcontent-c4="" class="slider-li active" ng-reflect-klass="slider-li" ng-reflect-ng-class="active,">
+      <iframe _ngcontent-c4="" frameborder="0" id="motd-iframe-3" src="https://api2.dmgamingsystems.com/ContentParser/Index/GetContent/20131202113823_Default_LAB_Promo/template_IT.html?accountid=fe727a15-9a50-4f63-8695-a6896a71cb34&amp;brandcode=RV&amp;languagecode=IT&amp;motdid=0bdda68d-ed20-41e9-839d-79520b0b83f5"></iframe>
+    </li>
+  </ul> -->
+  <!-- <ul _ngcontent-c4="" class="slider-indicators nav-horizontal" ng-reflect-klass="slider-indicators" ng-reflect-ng-class="[object Object]"> -->
+      <!--bindings={
+  "ng-reflect-ng-for-of": ""
+}-->
+<!-- <li _ngcontent-c4="" class="slider-indicators-item" ng-reflect-klass="slider-indicators-item" ng-reflect-ng-class="">
+      </li><li _ngcontent-c4="" class="slider-indicators-item" ng-reflect-klass="slider-indicators-item" ng-reflect-ng-class="">
+      </li><li _ngcontent-c4="" class="slider-indicators-item" ng-reflect-klass="slider-indicators-item" ng-reflect-ng-class="">
+      </li><li _ngcontent-c4="" class="slider-indicators-item active" ng-reflect-klass="slider-indicators-item" ng-reflect-ng-class="active">
+      </li>
+    </ul>
+  <a _ngcontent-c4="" class="slider-arrow-prev">❮</a>
+  <a _ngcontent-c4="" class="slider-arrow-next">❯</a>
+</div> -->
+
+<div class="slider clearfix" (mouseenter)="pause(true)" (mouseleave)="pause(false)">
+  <ul appSliderHandler class="slider-ul clearfix">
+    <li class="slider-li" [ngClass]="[slideIndex == 0 ? 'active' : '', slideDirection ]">
+      <iframe src="https://api2.dmgamingsystems.com/ContentParser/Index/GetContent/20161220130801_App_Deep_Linking_Default_MOTD_2/template_IT.html?accountid=fe727a15-9a50-4f63-8695-a6896a71cb34&amp;brandcode=RV&amp;languagecode=IT&amp;motdid=0828f623-c668-4d7a-9631-69698b86a825" frameborder="0"></iframe>
+    </li>
+    <li class="slider-li" [ngClass]="[slideIndex == 1 ? 'active' : '', slideDirection ]">
+      <iframe src="https://api2.dmgamingsystems.com/ContentParser/Index/GetContent/20161220112443_App_Deep_Linking_Default_MOTD/template_IT.html?accountid=fe727a15-9a50-4f63-8695-a6896a71cb34&amp;brandcode=RV&amp;languagecode=IT&amp;motdid=f3951400-1bdd-45c1-80ad-8b8a71300475" frameborder="0"></iframe>
+    </li>
+    <li class="slider-li" [ngClass]="[slideIndex == 2 ? 'active' : '', slideDirection ]">
+      <iframe src="https://api2.dmgamingsystems.com/ContentParser/Index/GetContent/20161222111240_Test_MOTD_With_Opt_In_Launch_and_Overlay/template_IT.html?accountid=fe727a15-9a50-4f63-8695-a6896a71cb34&amp;brandcode=RV&amp;languagecode=IT&amp;motdid=f9b2e1eb-4e64-4ad8-bed6-7f1056b19857" frameborder="0"></iframe>
+    </li>
+  </ul>
+  <ul class="slider-indicators">
+      <li class="slider-indicators-item" (click)="goToSlide(0)" [ngClass]="slideIndex == 0 ? 'active' : ''"></li>
+      <li class="slider-indicators-item" (click)="goToSlide(1)" [ngClass]="slideIndex == 1 ? 'active' : ''"></li>
+      <li class="slider-indicators-item" (click)="goToSlide(2)" [ngClass]="slideIndex == 2 ? 'active' : ''"></li>
+  </ul>
+  <a (click)="prev(slideIndex)" class="slider-arrow-prev">❮</a>
+  <a (click)="next(slideIndex)" class="slider-arrow-next">❯</a>
+</div>

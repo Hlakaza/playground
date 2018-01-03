@@ -1,5 +1,6 @@
 <div id="header">
   <app-header></app-header>
+ <app-slider _ngcontent-c2="" _nghost-c4="" ng-reflect-nav-orientation="true"></app-slider>
 <div class="container">
     <div class="row">
       <div class="col-twelve grid">
@@ -23,7 +24,7 @@
               <app-tab title="Grid">
                   <app-grid></app-grid>
               </app-tab>
-              <app-tab title="Modals">
+              <app-tab [disabled]="true" title="Modals">
                   <app-modals></app-modals>
               </app-tab>
             </app-tabs>

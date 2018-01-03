@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tabs/tab.component';
 import { HeaderComponent } from './header/header.component';
+import { SliderComponent } from './slider/slider.component';
 
 
 
@@ -26,6 +27,7 @@ import { HeaderComponent } from './header/header.component';
     TabsComponent,
     TabComponent,
     HeaderComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,
