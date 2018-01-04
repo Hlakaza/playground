@@ -2,12 +2,12 @@
     <li *ngFor="let tab of tabs; let i = index" (click)="selectTab(i)"  class="nav-item">
       <a href="#" class="nav-link" [class.active]="tab.active" [class.disabled]="tab.disabled">{{tab.title}}</a>
     </li>
-  </ul>
+</ul>
   <ng-content></ng-content>
 
-  <!-- <ul class="reg-tabs" [class.nav-tabs]="!vertical" [class.nav-tabs-vertical]="vertical">
-    <li *ngFor="let tab of tabs; let i = index" (click)="selectTab(i)"  class="reg-tab">
-      <a class="reg-tab-item" [class.account-header]="!vertical" [class.active]="tab.active" [class.disabled]="tab.disabled">{{tab.title}}</a>
+  <!--<ul class="nav-tabs-reg" [class.nav-tabs]="!vertical" [class.nav-tabs-vertical]="vertical">
+    <li *ngFor="let tab of tabs; let i = index" (click)="selectTab(i)"  class="tab-reg">
+      <a class="tab-reg-item" [class.account-header]="!vertical" [class.active]="tab.active" [class.disabled]="tab.disabled">{{tab.title}}</a>
        <span class="hr-step"></span>
     </li>
   </ul>

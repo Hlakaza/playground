@@ -17,7 +17,7 @@
         @include screen($large){
         padding-bottom: 27px;
         line-height: 60px;
-        border-bottom: 2px solid transparent;
+        border-bottom: 5px solid transparent;
         }
         cursor: pointer;
         a{
@@ -28,7 +28,7 @@
         }
         &:hover, &.active{
             @include screen($large){   
-                border-bottom: 2px solid $body-color; 
+                border-bottom: 5px solid $body-color; 
                 a{   
                     color: $primary-color;
                 }
@@ -48,7 +48,7 @@
     width: 250px;
 }
 .navbar-border-bottom{
-    border-bottom: 2px solid $default-color;
+    border-bottom: 5px solid $default-color;
 }
 @media (max-width: $large){
     .navbar-brand {
@@ -60,9 +60,9 @@
 }
 
 @media (max-width: $large){
-    // .buttons{
-    //   display: none;
-    // }
+    .navbar .col-three.grid{
+        width: 98%;
+       }
     .navbar{
         height: 100px
     }

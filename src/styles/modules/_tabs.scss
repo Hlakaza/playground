@@ -50,13 +50,14 @@
     text-decoration: none;
     color: $secondary-color;
     text-align: center;
+    cursor: pointer;
 }
 .nav-tabs-vertical .nav-link.active {
     background: $white-color;
 }
 
 //Registration Tabs
-.reg-tab-item {
+.tab-reg-item {
     width: 40px;
     display: block;
     height: 40px;
@@ -72,11 +73,11 @@
     text-decoration: none;
 
 }
-.reg-tab-item.active{
+.tab-reg-item.active{
     background-color: #194484;
     border-color: #194484;
 }
-.reg-tabs{
+.nav-tabs-reg{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -87,7 +88,7 @@
     justify-content: center;
     list-style: none;
 }
-.reg-tab-item:after {
+.tab-reg-item:after {
     content: "";
     height: 2px;
     background-color: #ced9e1;
@@ -96,6 +97,6 @@
     margin-left: 15.8px;
     margin-top: 10px;
 }
-.reg-tab:last-child .reg-tab-item:after {
+.tab-reg:last-child .tab-reg-item:after {
     background-color: transparent;
 }

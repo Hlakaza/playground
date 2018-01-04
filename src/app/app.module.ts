@@ -12,6 +12,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tabs/tab.component';
 import { HeaderComponent } from './header/header.component';
 import { SliderComponent } from './slider/slider.component';
+import { GamesComponent } from './games/games.component';
 
 
 
@@ -28,6 +29,7 @@ import { SliderComponent } from './slider/slider.component';
     TabComponent,
     HeaderComponent,
     SliderComponent,
+    GamesComponent,
   ],
   imports: [
     BrowserModule,
