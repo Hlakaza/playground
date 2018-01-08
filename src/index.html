@@ -10,6 +10,12 @@
  <link rel="stylesheet" href="./component-examples.css">
 </head>
 <body class="bg-primary">
-  <app-root></app-root>
+  <app-root>
+      <div class="loader" id="loader-4" *ngIf="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+  </app-root>
 </body>
 </html>

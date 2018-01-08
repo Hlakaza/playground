@@ -16,14 +16,17 @@ import { SliderComponent } from './slider/slider.component';
 import { GamesComponent } from './games/games.component';
 import { RegisterComponent } from './register/register.component';
 import { componentFactoryName } from '@angular/compiler';
+import { StyleguideComponent } from './styleguide/styleguide.component';
+import { HomeComponent } from './home/home.component';
+import { SlotsComponent } from './slots/slots.component';
 const appRoutes: Routes = [
   {
     path: '',
-    component: AppComponent
+    component: HomeComponent
   },
   {
-    path: 'games',
-    component: GamesComponent
+    path: 'styleguide',
+    component: StyleguideComponent
   }
 ];
 
@@ -42,6 +45,9 @@ const appRoutes: Routes = [
     SliderComponent,
     GamesComponent,
     RegisterComponent,
+    StyleguideComponent,
+    HomeComponent,
+    SlotsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,37 +1,9 @@
 <div id="header">
   <app-header></app-header>
- <app-slider _ngcontent-c2="" _nghost-c4="" ng-reflect-nav-orientation="true"></app-slider>
-<div class="container">
- <app-games></app-games>
-    <div class="row">
-      <div class="col-twelve grid">
-        <h1>Global Playground</h1>
-        <h3>Simple CSS framework for Web Team.</h3>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col-twelve grid tabs-container">
-          <!-- <app-tabs> -->
-           <app-tabs [vertical]="true">
-              <app-tab title="Buttons">
-                  <app-buttons></app-buttons>
-              </app-tab>
-              <app-tab title="Forms">
-                  <app-forms></app-forms>
-              </app-tab>
-              <app-tab title="Typography">
-                  <app-typography></app-typography>
-              </app-tab>
-              <app-tab title="Grid">
-                  <app-grid></app-grid>
-              </app-tab>
-              <app-tab [disabled]="true" title="Modals">
-                  <app-modals></app-modals>
-              </app-tab>
-            </app-tabs>
-          </div>
-    </div>
-  </div>
+  <app-slider _ngcontent-c2="" _nghost-c4="" ng-reflect-nav-orientation="true"></app-slider>
+ <div class="container">
+  <router-outlet></router-outlet>
+ </div> 
 </div>
 <app-modals #login>
   <ng-template #modalHeader>

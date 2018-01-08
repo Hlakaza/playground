@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-twelve grid">
+    <h1>Global Playground</h1>
+    <h3>Simple CSS framework for Web Team.</h3>
+  </div>
+</div>
+<div class="row">
+    <div class="col-twelve grid tabs-container">
+      <!-- <app-tabs> -->
+       <app-tabs [vertical]="true">
+          <app-tab title="Buttons">
+              <app-buttons></app-buttons>
+          </app-tab>
+          <app-tab title="Forms">
+              <app-forms></app-forms>
+          </app-tab>
+          <app-tab title="Typography">
+              <app-typography></app-typography>
+          </app-tab>
+          <app-tab title="Grid">
+              <app-grid></app-grid>
+          </app-tab>
+          <app-tab [disabled]="true" title="Modals">
+              <app-modals></app-modals>
+          </app-tab>
+        </app-tabs>
+      </div>
+</div>
