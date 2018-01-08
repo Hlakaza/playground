@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { APP_BASE_HREF } from '@angular/common';
 import { AppComponent } from './app.component';
@@ -14,8 +15,17 @@ import { HeaderComponent } from './header/header.component';
 import { SliderComponent } from './slider/slider.component';
 import { GamesComponent } from './games/games.component';
 import { RegisterComponent } from './register/register.component';
-
-
+import { componentFactoryName } from '@angular/compiler';
+const appRoutes: Routes = [
+  {
+    path: '',
+    component: AppComponent
+  },
+  {
+    path: 'games',
+    component: GamesComponent
+  }
+];
 
 @NgModule({
   declarations: [
@@ -35,6 +45,9 @@ import { RegisterComponent } from './register/register.component';
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(
+      appRoutes
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
