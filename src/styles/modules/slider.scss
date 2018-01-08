@@ -91,7 +91,7 @@
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
     max-width: 30px;
-    height: 4px;
+    height: 10px;
     margin-right: 3px;
     margin-left: 3px;
     text-indent: -999px;
@@ -101,6 +101,7 @@
 .slider-indicators-item.active {
     background-color: #fff;
 }
+
 @media (max-width: 64em){
     .slider-indicators{
         bottom: -10px;

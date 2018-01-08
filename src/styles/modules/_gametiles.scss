@@ -14,6 +14,7 @@
   }
   .flex-category-item {
     width: 20%;
+    float: left;
     padding: 0 5px;
     min-height: 150px;
     margin-top: 10px;
@@ -23,8 +24,8 @@
   }
   
   .flex-game-item {
-    // background-color: #fff;
     width: 50%;
+    float: left;
     padding: 0 5px;
     min-height: 150px;
     margin-top: 10px;
@@ -64,6 +65,7 @@
 
   }
  .center-block{
+    visibility: hidden; 
     position: absolute;
     top: 50%;
     left: 0%;
@@ -75,6 +77,10 @@
     button{
         margin: 5px 0;
     }
+ }
+
+ .game-image:hover .image-hover .center-block{
+     visibility: visible;
  }
   .game-label{
     display: none;

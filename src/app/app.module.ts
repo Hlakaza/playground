@@ -13,6 +13,7 @@ import { TabComponent } from './tabs/tab.component';
 import { HeaderComponent } from './header/header.component';
 import { SliderComponent } from './slider/slider.component';
 import { GamesComponent } from './games/games.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -30,6 +31,7 @@ import { GamesComponent } from './games/games.component';
     HeaderComponent,
     SliderComponent,
     GamesComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
