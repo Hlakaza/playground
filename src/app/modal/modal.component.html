@@ -20,7 +20,7 @@
 
   <ng-template [ngIf]="modals['myAccount']" class="my-account">
       <div class="modal open" tabindex="-1" [ngStyle]="modalStyles" role="dialog">
-        <div class="modal-dialog modal-large" role="document">
+        <div class="modal-dialog modal-medium" role="document">
           <div class="modal-content">
             <div class="modal-body no-pad-all clearfix">
               <button type="button" class="close" (click)="modalClose('myAccount')" data-dismiss="modal" aria-label="Close">
@@ -29,7 +29,7 @@
     
               <app-tabs [vertical]="true">
                 <app-tab title="Balances">
-                  <!-- <app-balances></app-balances> -->
+                  <app-balances></app-balances>
                 </app-tab>
                 <app-tab title="Inbox">
                   <!-- <app-inbox></app-inbox> -->

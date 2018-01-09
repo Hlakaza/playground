@@ -1,6 +1,68 @@
 .account-header{
-    border-bottom: 3px solid #ced9e1;
+    border-bottom: 3px solid $default-color;
+    margin-top: 60px;
 }
 .account-header.active{
-    border-bottom: 3px solid #f15a2a;;
+    border-bottom: 3px solid $primary-color;;
+}
+.tab-content{
+    padding: 0 60px;
+}
+.account-buttons-container{
+    margin-top: 50px;
+}
+.account-footer-container {
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+}
+.account-balance-desc{
+  width: 200px;
+}
+.account-footer-link{
+    color: $light-gray-color;
+    padding: 14px 15px;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+.vertical-line{
+  border-right: 1px solid $light-gray-color;
+  line-height: 7px;
+  vertical-align: middle;
+}
+@media (max-width: $large){
+    .tab-content {
+        padding: 0 15px;
+    }
+    .account-footer-container {
+        position: relative;
+        margin-top: 1rem;
+        margin-bottom: 10px;
+        right: auto;
+    }
+    .account-buttons-container{
+        margin-top: 0;
+        .spacing-right{
+            margin-right: 0;
+        }
+        .spacing-left{
+            margin-left: 0;
+        }
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .account-buttons-container{
+        .btn{
+            font-size: 0.9rem;
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        .account-footer-link{
+            font-size: 0.9rem;
+        }
+    } 
+ 
 }

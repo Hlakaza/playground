@@ -45,7 +45,7 @@
 }
 .nav-tabs-vertical .nav-link {
     display: block;
-    width: 100%;
+    width: 150px;
     padding: 1.8em  0.5em;
     text-decoration: none;
     color: $secondary-color;
@@ -55,4 +55,10 @@
 .nav-tabs-vertical .nav-link.active {
     background: $white-color;
 }
-
+@media (max-width: $large){
+    .nav-tabs-vertical .nav-link{
+        width: 100%;
+        padding: 1.5em;
+        text-align: left;
+    }
+}
