@@ -35,33 +35,16 @@
             <li class="nav-item"><a href="#">Promozion</a></li>
             <li class="nav-item"><a href="#">Promozion</a></li>
           </ul>
-          <div class="pull-right buttons" *ngIf="!show">
-            <button type="button" class="btn btn-full" (click)="login.open()">Login</button>
-            <button type="button" class="btn btn-primary" (click)="register.open()">Register</button>
+          <div class="pull-right buttons" *ngIf="visible">
+            <button type="button" class="btn btn-full" appModal modal-open="login">Login</button>
+            <button type="button" class="btn btn-primary" appModal modal-open="register">Register</button>
           </div>
-          <div class="pull-right buttons" *ngIf="show">
-            <button type="button" class="btn btn-secondary" (click)="account.open()">Bank</button>
-            <button type="button" class="btn btn-secondary" (click)="account.open()">My Account</button>
+          <div class="pull-right buttons" *ngIf="!visible">
+            <button type="button" class="btn btn-secondary" appModal modal-open="myAccount">Bank</button>
+            <button type="button" class="btn btn-secondary" appModal modal-open="myAccount">My Account</button>
           </div>
       </div>
     </div>
   </div>
 </nav>
-<app-modals #login>
-    <ng-template #modalHeader>
-      <h2>Login</h2>
-    </ng-template>
-    <ng-template #modalBody>
-      <app-login></app-login>
-    </ng-template>
-    <ng-template #modalFooter></ng-template>
-  </app-modals>
-  <app-modals #register>
-      <ng-template #modalHeader>
-        <h2>Login</h2>
-      </ng-template>
-      <ng-template #modalBody>
-        <app-login></app-login>
-      </ng-template>
-      <ng-template #modalFooter></ng-template>
-    </app-modals>
+<app-modal></app-modal>

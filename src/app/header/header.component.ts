@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ModalService } from '../services/modal.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   show: boolean;
-  constructor() { }
+  visible: boolean;
+  constructor( private modal: ModalService) {}
 
   ngOnInit() {
   }

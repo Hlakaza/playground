@@ -2,12 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { APP_BASE_HREF } from '@angular/common';
+// Services
+import { ModalService } from './services/modal.service';
+// Components
 import { AppComponent } from './app.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { TypographyComponent } from './typography/typography.component';
 import { FormsComponent } from './forms/forms.component';
 import { GridComponent } from './grid/grid.component';
-import { ModalsComponent } from './modals/modals.component';
+import { ModalComponent } from './modal/modal.component';
 import { LoginComponent } from './login/login.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tabs/tab.component';
@@ -19,6 +22,8 @@ import { componentFactoryName } from '@angular/compiler';
 import { StyleguideComponent } from './styleguide/styleguide.component';
 import { HomeComponent } from './home/home.component';
 import { SlotsComponent } from './slots/slots.component';
+import { ModalDirective } from './directives/modal.directive';
+
 const appRoutes: Routes = [
   {
     path: '',
@@ -37,7 +42,7 @@ const appRoutes: Routes = [
     TypographyComponent,
     FormsComponent,
     GridComponent,
-    ModalsComponent,
+    ModalComponent,
     LoginComponent,
     TabsComponent,
     TabComponent,
@@ -48,6 +53,7 @@ const appRoutes: Routes = [
     StyleguideComponent,
     HomeComponent,
     SlotsComponent,
+    ModalDirective
   ],
   imports: [
     BrowserModule,
@@ -55,7 +61,9 @@ const appRoutes: Routes = [
       appRoutes
     )
   ],
-  providers: [],
+  providers: [
+    ModalService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

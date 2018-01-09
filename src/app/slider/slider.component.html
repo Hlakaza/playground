@@ -27,7 +27,7 @@
   <a _ngcontent-c4="" class="slider-arrow-next">❯</a>
 </div> -->
 
-<div class="slider clearfix" (mouseenter)="pause(true)" (mouseleave)="pause(false)">
+<div class="slider clearfix motd" (mouseenter)="pause(true)" (mouseleave)="pause(false)">
   <ul appSliderHandler class="slider-ul clearfix">
     <li class="slider-li" [ngClass]="[slideIndex == 0 ? 'active' : '', slideDirection ]">
       <iframe src="https://api2.dmgamingsystems.com/ContentParser/Index/GetContent/20161220130801_App_Deep_Linking_Default_MOTD_2/template_IT.html?accountid=fe727a15-9a50-4f63-8695-a6896a71cb34&amp;brandcode=RV&amp;languagecode=IT&amp;motdid=0828f623-c668-4d7a-9631-69698b86a825" frameborder="0"></iframe>
@@ -47,3 +47,16 @@
   <a (click)="prev(slideIndex)" class="slider-arrow-prev">❮</a>
   <a (click)="next(slideIndex)" class="slider-arrow-next">❯</a>
 </div>
+
+<!-- <div class="slider clearfix" (mouseenter)="pause(true)" (mouseleave)="pause(false)">-->
+    <!-- logged Out -->
+    <!-- <ul *ngIf="!auth.isAuthenticated" class="slider-ul clearfix">    
+        <li class="slider-li" *ngFor="let item of slides; let i = index" [ngClass]="[slideIndex == i ? 'active' : '', slideDirection ]">
+          <div class="copyBinding" [innerHtml]="item.content"></div>
+        </li>
+    </ul>   -->
+    <!-- Indicators Logged Out -->  
+    <!-- <ul *ngIf="!auth.isAuthenticated" class="slider-indicators nav-vertical">
+        <li class="slider-indicators-item" *ngFor="let item of slides; let i = index" (click)="goToSlide(i)" [innerHtml]="item.title" [ngClass]="slideIndex == i ? 'active' : ''"></li>
+    </ul>
+  </div> -->

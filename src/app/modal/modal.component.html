@@ -1,0 +1,58 @@
+<ng-template [ngIf]="modals['login']">
+    <div class="modal open" tabindex="-1" [ngStyle]="modalStyles" role="dialog">
+      <div class="modal-dialog modal-small" role="document">
+        <div class="modal-content">
+          <div class="modal-header clearfix">
+            <button type="button" class="close" (click)="modalClose('login')" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">Login</h3>
+          </div>
+          <div class="modal-body">
+            <app-login></app-login>
+            <a href="#" class="text-right clearfix" (click)="modalClose('login'); modalOpen('forgot-password');">Forgot your login details?</a>
+            <a href="#" class="text-right clearfix" (click)="modalClose('login'); modalOpen('register');">Create an account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template [ngIf]="modals['myAccount']" class="my-account">
+      <div class="modal open" tabindex="-1" [ngStyle]="modalStyles" role="dialog">
+        <div class="modal-dialog modal-large" role="document">
+          <div class="modal-content">
+            <div class="modal-body no-pad-all clearfix">
+              <button type="button" class="close" (click)="modalClose('myAccount')" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+    
+              <app-tabs [vertical]="true">
+                <app-tab title="Balances">
+                  <!-- <app-balances></app-balances> -->
+                </app-tab>
+                <app-tab title="Inbox">
+                  <!-- <app-inbox></app-inbox> -->
+                </app-tab>
+                <app-tab title="Document Verification">
+                  <!-- <app-document-verification></app-document-verification> -->
+                </app-tab>
+                <app-tab title="Rewards">
+                  <!-- <app-rewards></app-rewards> -->
+                </app-tab>
+                <app-tab title="History">
+                  <!-- <app-history></app-history> -->
+                </app-tab>
+                <app-tab title="Profile">
+                  <!-- <app-profile></app-profile> -->
+                </app-tab>
+                <app-tab title="Responsible Gaming">
+                  <!-- <app-responsible-gaming></app-responsible-gaming> -->
+                </app-tab>
+                <app-tab title="Logout">&nbsp;</app-tab>
+              </app-tabs>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
