@@ -25,6 +25,7 @@ import { SlotsComponent } from './slots/slots.component';
 import { BalancesComponent } from './balances/balances.component';
 import { ModalDirective } from './directives/modal.directive';
 import { InboxComponent } from './inbox/inbox.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const appRoutes: Routes = [
   {
@@ -58,6 +59,7 @@ const appRoutes: Routes = [
     BalancesComponent,
     ModalDirective,
     InboxComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

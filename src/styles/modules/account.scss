@@ -46,6 +46,13 @@
     padding: 15px 0;
     border-bottom: 1px solid $light-gray-color;
 }
+@include screen($large){
+
+      .scroll-content{
+          overflow-y: scroll;
+          height: 710px;
+      }
+}
 
 @media (max-width: $large){
     .account-footer-container {

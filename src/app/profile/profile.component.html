@@ -1,0 +1,213 @@
+<div class="scroll-content">
+  <form class="row">
+    <div class="col-six grid">
+        <h3 class="account-header">Dati personati</h3>
+        <label for="FirstName">Name:</label>
+        <input formControlName="FirstName" class="ng-invalid ng-touched" name="FirstName" type="text"  />
+        <span class="form-text-danger">
+            Please enter your first name.
+        </span>
+        <label for="LastName">Surname:</label>
+        <input formControlName="LastName" name="LastName" type="text" />
+        <!-- <span class="danger" *ngIf="profileForm.get('LastName').hasError('required') && profileForm.get('LastName').touched">
+            Please enter your surname.
+        </span> -->
+        <div class="row clear-gutter">
+            <p>Date of Birth:</p>
+            <label for="DOBDay" class="col-four grid">Day
+                <select formControlName="DOBDay" name="DOBDay">
+                    <option>08</option>
+                    <option>08</option>
+                    <option>08</option>
+                </select>
+            </label>
+  
+            <label for="DOBMonth" class="col-four grid">Month
+                <select formControlName="DOBMonth" name="DOBMonth">
+                    <option >05</option>
+                </select>
+            </label>
+            <label for="DOBYear" class="col-four grid">Year
+                <select formControlName="DOBYear" name="DOBYear">
+                    <option >2014</option>
+                </select>
+            </label>
+            <!-- <span class="danger" *ngIf="(profileForm.get('DOBDay').hasError('required') && profileForm.get('DOBDay').touched) || (profileForm.get('DOBMonth').hasError('required') && profileForm.get('DOBMonth').touched) || (profileForm.get('DOBYear').hasError('required') && profileForm.get('DOBYear').touched)">
+                Please enter your date of birth.
+            </span> -->
+        </div>
+        <label for="countryOfBirth">Country of Birth:</label>
+        <select formControlName="countryOfBirth" name="countryOfBirth">
+            <option >provinceOfBirth</option>
+            <option >provinceOfBirth</option>
+            <option >provinceOfBirth</option>
+        </select>
+        <label for="provinceOfBirth">Province of Birth</label>
+        <select formControlName="provinceOfBirth" name="provinceOfBirth">
+            <option >provinceOfBirth</option>
+        </select>
+        <!-- <span class="danger" *ngIf="profileForm.get('provinceOfBirth').hasError('required') && profileForm.get('provinceOfBirth').touched">
+            Select a province of birth if your country of birth is Italy
+        </span> -->
+        <label for="townOfBirth">Town of Birth</label>
+        <select formControlName="townOfBirth" name="townOfBirth">
+            <option >townOfBirth</option>
+        </select>
+        <label for="codiceFiscale">Codice Fiscale</label>
+        <input formControlName="codiceFiscale" name="codiceFiscale" type="text" />
+        <!-- <span class="danger" *ngIf="profileForm.get('codiceFiscale').hasError('required') && profileForm.get('codiceFiscale').touched">
+            Enter the 16 digit code assigned to you by the Italian Authorities
+        </span> -->
+        <button class="btn btn-primary spacing-bottom">Calculate</button>
+        <label for="CountryCode">Country Of Residence</label>
+        <select formControlName="CountryCode" name="CountryCode">
+            <option >townOfBirth</option>
+        </select>
+        <!-- <span class="danger" *ngIf="profileForm.get('CountryCode').hasError('required') && profileForm.get('CountryCode').touched">
+            Please select the country you stay in.
+        </span> -->
+        <label for="Province">Province of Residence</label>
+        <select  name="Province">
+            <option >Province</option>
+            <option >lkllklklk</option>
+            <option >lkllklklk</option>
+        </select>
+        <label for="address">Address</label>
+        <input formControlName="address" name="address" type="text" />
+        <!-- <span class="danger" *ngIf="profileForm.get('address').hasError('required') && profileForm.get('address').touched">
+            Please enter your postal address.
+        </span> -->
+        <label for="City">City</label>
+        <input formControlName="City" name="City" type="text" />
+        <!-- <span class="danger" *ngIf="profileForm.get('City').hasError('required') && profileForm.get('City').touched">
+            Please enter the city you stay in.
+        </span> -->
+        <label for="ZipPostalCode">Postal Code</label>
+        <input formControlName="ZipPostalCode" name="ZipPostalCode" type="text" />
+        <!-- <span class="danger" *ngIf="profileForm.get('ZipPostalCode').hasError('required') && profileForm.get('ZipPostalCode').touched">
+            Please enter a valid Zip/Postal Code.
+        </span> -->
+        <label for="PhoneMobile">Telephone Number</label>
+        <input formControlName="PhoneMobile" name="PhoneMobile" type="number" />
+        <!-- <span class="danger" *ngIf="profileForm.get('PhoneMobile').hasError('required') && profileForm.get('PhoneMobile').touched">
+            Please enter a valid telephone number.
+        </span> -->
+        <label for="EmailAddress">Email</label>
+        <input name="EmailAddress" type="email" />
+        <!-- <span class="danger" *ngIf="profileForm.get('EmailAddress').hasError('email') && profileForm.get('EmailAddress').touched">
+            Please enter a valid e-mail address.
+        </span> -->
+    </div>
+    <div class="col-six grid">
+        <h3 class="account-header">Dettagli contatto</h3>
+        <label for="docType">Document Type</label>
+        <select name="docType">
+            <option >ZAZAZA</option>
+            <option >ZAZAZA</option>
+            <option >ZAZAZA</option>
+        </select>
+        <!-- <span *ngIf="profileForm.get('docType').hasError('required') && profileForm.get('docType').touched">
+            Please select a valid ID Type
+        </span> -->
+        <label for="issuedBy">Issued By</label>
+        <select  name="issuedBy">
+            <option >SA</option>
+            <option >SA</option>
+            <option >SA</option>
+        </select>
+        <!-- <span *ngIf="profileForm.get('issuedBy').hasError('required') && profileForm.get('issuedBy').touched">
+            Please select Issuing Authority
+        </span> -->
+        <label for="idNumber">ID number</label>
+        <input  name="idNumber" type="text" />
+        <label for="issuedIn">Issued in locality</label>
+        <input  name="issuedIn" type="text" />
+        <!-- <span *ngIf="profileForm.get('issuedBy').hasError('required') && profileForm.get('issuedBy').touched">
+            Enter the locality your ID was issued at
+        </span> -->
+        <div>
+            <p>Valid from:</p>
+            <label for="validFDay">Day</label>
+            <select formControlName="validFDay" name="validFDay">
+                <option *ngFor="let day of dayArr" [value]="day">{{day}}</option>
+            </select>
+            <label for="validFMonth">Month</label>
+            <select formControlName="validFMonth" name="validFMonth">
+                <option >june</option>
+            </select>
+            <label for="validFYear">Year</label>
+            <select name="validFYear">
+                <option >2014</option>
+                <option >2014</option>
+                <option >2014</option>
+            </select>
+            <!-- <span class="danger" *ngIf="(profileForm.get('validFDay').hasError('required') && profileForm.get('validFDay').touched) || (profileForm.get('validFMonth').hasError('required') && profileForm.get('validFMonth').touched) || (profileForm.get('validFYear').hasError('required') && profileForm.get('validFYear').touched)">
+                Please enter a valid date
+            </span> -->
+        </div>
+        <div>
+            <p>Valid to:</p>
+            <label for="validTDay">Day</label>
+            <select>
+                <option>Monday</option>
+            </select>
+            <label for="validTMonth">Month</label>
+            <select  name="validTMonth">
+                <option>june</option>
+                <option>june</option>
+                <option>june</option>
+            </select>
+            <label for="validTYear">Year</label>
+            <select name="validTYear">
+                <option >2014</option>
+                <option >2014</option>
+                <option >2014</option>
+            </select>
+            <!-- <span class="danger" *ngIf="(profileForm.get('validTDay').hasError('required') && profileForm.get('validTDay').touched) || (profileForm.get('validTMonth').hasError('required') && profileForm.get('validTMonth').touched) || (profileForm.get('validTYear').hasError('required') && profileForm.get('validTYear').touched)">
+                Please enter a valid date
+            </span> -->
+        </div>
+        <h3>Dettagli documento di identita</h3>
+        <label for="Username">Username</label>
+        <input  name="Username" type="text" />
+        <!-- <span class="danger" *ngIf="profileForm.get('Username').hasError('required') && profileForm.get('Username').touched">
+            Please choose a username to create your account - maximum 20 characters. Live Help
+        </span> -->
+        <label for="Password">Password</label>
+        <input formControlName="Password" name="Password" />
+        <button type="button" (click)="togglePassView()">P</button>
+        <!-- <span class="danger" *ngIf="profileForm.get('Password').hasError('required') && profileForm.get('Password').touched">
+            Password strength. Weak. Please choose a password. Use a combination of numbers and letters – min 4 and max 20 characters.
+            Live Help
+        </span> -->
+        <label for="confirmPassword">Confirm Password</label>
+        <input  name="confirmPassword" />
+        <button type="button" (click)="toggleConfView()">P</button>
+        <!-- <span class="danger" *ngIf="profileForm.get('confirmPassword').hasError('passwordMatch') && profileForm.get('confirmPassword').touched">
+            This is to ensure you entered your password correctly.
+        </span> -->
+        <label for="secretQuestion">Secret Question</label>
+        <input name="secretQuestion" type="text" />
+        <!-- <span class="danger" *ngIf="profileForm.get('secretQuestion').hasError('required') && profileForm.get('secretQuestion').touched">
+            Enter a question only you know the answer to. Make sure the question is not related to your password. This question will
+            be used as part the Forgot Password function
+        </span> -->
+        <label for="secretAnswer">Secret Answer</label>
+        <input  name="secretAnswer" type="text" />
+        <!-- <span class="danger" *ngIf="profileForm.get('secretAnswer').hasError('required') && profileForm.get('secretAnswer').touched">
+            Enter the answer to your secret question
+        </span> -->
+        <label for="sessionDuration">Session duration reminder</label>
+        <select name="sessionDuration">
+            <option >day</option>
+        </select>
+        <label for="depositLimit">Deposit Limit</label>
+        <input  name="depositLimit" type="text" />
+        <!-- <span class="danger" *ngIf="profileForm.get('depositLimit').hasError('required') && profileForm.get('depositLimit').touched">
+            You have entered an invalid amount. Please correct the value before proceeding
+        </span> -->
+        <label for="Currency">Currency</label>
+        <input formControlName="Currency" name="Currency" type="text" />
+    </div>
+  </form>
+</div>

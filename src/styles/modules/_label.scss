@@ -15,6 +15,12 @@
 .danger {
 	color: $danger-color;
 }
+.form-text-danger{
+	color: $danger-color;
+    margin: -9px 0 10px;
+	font-size: 0.8rem;
+	display: block;
+}
 input, 
 select{
 	&.ng-invalid.ng-touched{
