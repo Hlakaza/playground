@@ -22,7 +22,7 @@
       <div class="modal open" tabindex="-1" [ngStyle]="modalStyles" role="dialog">
         <div class="modal-dialog modal-medium" role="document">
           <div class="modal-content">
-            <div class="modal-body no-pad-all clearfix">
+            <div class="modal-body no-pad-all clearfix tab-account">
               <button type="button" class="close" (click)="modalClose('myAccount')" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -32,7 +32,7 @@
                   <app-balances></app-balances>
                 </app-tab>
                 <app-tab title="Inbox">
-                  <!-- <app-inbox></app-inbox> -->
+                  <app-inbox></app-inbox>
                 </app-tab>
                 <app-tab title="Document Verification">
                   <!-- <app-document-verification></app-document-verification> -->

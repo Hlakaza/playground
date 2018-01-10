@@ -24,6 +24,7 @@ import { HomeComponent } from './home/home.component';
 import { SlotsComponent } from './slots/slots.component';
 import { BalancesComponent } from './balances/balances.component';
 import { ModalDirective } from './directives/modal.directive';
+import { InboxComponent } from './inbox/inbox.component';
 
 const appRoutes: Routes = [
   {
@@ -56,6 +57,7 @@ const appRoutes: Routes = [
     SlotsComponent,
     BalancesComponent,
     ModalDirective,
+    InboxComponent,
   ],
   imports: [
     BrowserModule,

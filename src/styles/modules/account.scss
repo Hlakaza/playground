@@ -5,7 +5,7 @@
 .account-header.active{
     border-bottom: 3px solid $primary-color;;
 }
-.tab-content{
+.tab-account .tab-content{
     padding: 0 60px;
 }
 .account-buttons-container{
@@ -30,6 +30,23 @@
   line-height: 7px;
   vertical-align: middle;
 }
+
+.account-inbox-date {
+    font-size: 0.9rem;
+}
+.account-inbox-subj {
+    font-size: 0.9rem;
+    width: 85%;
+}
+.account-inbox-btn {
+    font-size: 0.9rem;
+    width: 15%;
+}
+.account-inbox-container{
+    padding: 15px 0;
+    border-bottom: 1px solid $light-gray-color;
+}
+
 @media (max-width: $large){
     .tab-content {
         padding: 0 15px;
