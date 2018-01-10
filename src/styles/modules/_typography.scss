@@ -39,7 +39,9 @@ h4 {
     font-weight: $font-weight-bold;
     font-size: $font-size-base;
 }
-
+p{
+	margin: 0;
+}
 blockquote {
 	margin: 28px 0 28px -36px;
 	padding: 0 0 0 28px;
