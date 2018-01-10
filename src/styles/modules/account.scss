@@ -50,7 +50,9 @@
     border-bottom: 1px solid $light-gray-color;
 }
 @include screen($large){
-
+    .tab-account {
+        height: 715px;
+    }
       .scroll-content{
           overflow-y: scroll;
           height: 710px;
