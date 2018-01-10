@@ -48,9 +48,6 @@
 }
 
 @media (max-width: $large){
-    .tab-content {
-        padding: 0 15px;
-    }
     .account-footer-container {
         position: relative;
         margin-top: 1rem;
@@ -70,6 +67,9 @@
 }
 
 @media (max-width: 425px) {
+    .tab-account .tab-content {
+        padding: 0 15px;
+    }
     .account-buttons-container{
         .btn{
             font-size: 0.9rem;
@@ -80,6 +80,10 @@
         .account-footer-link{
             font-size: 0.9rem;
         }
-    } 
+    }
+    
+    .account-inbox-btn, .account-inbox-subj {
+        width: 100%;
+    }
  
 }
