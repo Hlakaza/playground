@@ -129,7 +129,7 @@
             <p>Valid from:</p>
             <label for="validFDay">Day</label>
             <select formControlName="validFDay" name="validFDay">
-                <option *ngFor="let day of dayArr" [value]="day">{{day}}</option>
+                <option >000</option>
             </select>
             <label for="validFMonth">Month</label>
             <select formControlName="validFMonth" name="validFMonth">
@@ -175,14 +175,14 @@
         </span> -->
         <label for="Password">Password</label>
         <input formControlName="Password" name="Password" />
-        <button type="button" (click)="togglePassView()">P</button>
+        <button type="button">P</button>
         <!-- <span class="danger" *ngIf="profileForm.get('Password').hasError('required') && profileForm.get('Password').touched">
             Password strength. Weak. Please choose a password. Use a combination of numbers and letters – min 4 and max 20 characters.
             Live Help
         </span> -->
         <label for="confirmPassword">Confirm Password</label>
         <input  name="confirmPassword" />
-        <button type="button" (click)="toggleConfView()">P</button>
+        <button type="button" >P</button>
         <!-- <span class="danger" *ngIf="profileForm.get('confirmPassword').hasError('passwordMatch') && profileForm.get('confirmPassword').touched">
             This is to ensure you entered your password correctly.
         </span> -->
