@@ -1,12 +1,15 @@
 .account-header{
     border-bottom: 3px solid $default-color;
-    margin-top: 60px;
+   margin-top: 54px;
 }
 .account-header.active{
     border-bottom: 3px solid $primary-color;;
 }
 .tab-account .tab-content{
     padding: 0 60px;
+}
+.tab-account .tab-content .tab-content{
+    padding: 1em 1em;
 }
 .account-buttons-container{
     margin-top: 50px;

@@ -49,10 +49,11 @@ textarea {
 label {
 	display: block;
 	margin-top: 10px;
-	input[type="radio"] + &,
-	input[type="checkbox"] + & {
+}
+input[type="radio"],
+input[type="checkbox"]{
 		display: inline-block;
-	}
+		height: 15px;
 }
 
 
