@@ -1,0 +1,471 @@
+﻿hll {
+  background-color: #ffc;
+}
+.c {
+  color: #999;
+}
+.k {
+  color: #069;
+}
+.o {
+  color: #555;
+}
+.cm {
+  color: #999;
+}
+.cp {
+  color: #099;
+}
+.c1 {
+  color: #999;
+}
+.cs {
+  color: #999;
+}
+.gd {
+  background-color: #fcc;
+  border: 1px solid #c00;
+}
+.ge {
+  font-style: italic;
+}
+.gr {
+  color: #f00;
+}
+.gh {
+  color: #030;
+}
+.gi {
+  background-color: #cfc;
+  border: 1px solid #0c0;
+}
+.go {
+  color: #aaa;
+}
+.gp {
+  color: #009;
+}
+.gu {
+  color: #030;
+}
+.gt {
+  color: #9c6;
+}
+.kc {
+  color: #069;
+}
+.kd {
+  color: #069;
+}
+.kn {
+  color: #069;
+}
+.kp {
+  color: #069;
+}
+.kr {
+  color: #069;
+}
+.kt {
+  color: #078;
+}
+.m {
+  color: #f60;
+}
+.s {
+  color: #d44950;
+}
+.na {
+  color: #4f9fcf;
+}
+.nb {
+  color: #366;
+}
+.nc {
+  color: #0a8;
+}
+.no {
+  color: #360;
+}
+.nd {
+  color: #99f;
+}
+.ni {
+  color: #999;
+}
+.ne {
+  color: #c00;
+}
+.nf {
+  color: #c0f;
+}
+.nl {
+  color: #99f;
+}
+.nn {
+  color: #0cf;
+}
+.nt {
+  color: #2f6f9f;
+}
+.nv {
+  color: #033;
+}
+.ow {
+  color: #000;
+}
+.w {
+  color: #bbb;
+}
+.mf {
+  color: #f60;
+}
+.mh {
+  color: #f60;
+}
+.mi {
+  color: #f60;
+}
+.mo {
+  color: #f60;
+}
+.sb {
+  color: #c30;
+}
+.sc {
+  color: #c30;
+}
+.sd {
+  font-style: italic;
+  color: #c30;
+}
+.s2 {
+  color: #c30;
+}
+.se {
+  color: #c30;
+}
+.sh {
+  color: #c30;
+}
+.si {
+  color: #a00;
+}
+.sx {
+  color: #c30;
+}
+.sr {
+  color: #3aa;
+}
+.s1 {
+  color: #c30;
+}
+.ss {
+  color: #fc3;
+}
+.bp {
+  color: #366;
+}
+.vc {
+  color: #033;
+}
+.vg {
+  color: #033;
+}
+.vi {
+  color: #033;
+}
+.il {
+  color: #f60;
+}
+.css .o, .css .o + .nt, .css .nt + .nt {
+  color: #999;
+}
+.language-bash::before, .language-sh::before {
+  color: #009;
+  content: "$ ";
+  user-select: none;
+}
+.language-powershell::before {
+  color: #009;
+  content: "PM> ";
+  user-select: none;
+}
+
+code {
+  color: darkred;
+
+}
+a > code {
+  padding: 0;
+  color: inherit;
+  background-color: inherit;
+}
+
+kbd kbd {
+  padding: 0;
+  font-size: 100%;
+}
+pre {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #e9e9e9;
+}
+code{
+  background-color: #e9e9e9;
+}
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+}
+.pre-scrollable {
+  overflow-y: scroll;
+}
+.bd-example-row .row + .row {
+  margin-top: 1rem;
+}
+.bd-example-row .row > .col, .bd-example-row .row > [class^="col-"] {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: rgba(86, 61, 124, .15);
+  border: 1px solid rgba(86, 61, 124, .2);
+}
+.bd-example-row .flex-items-top, .bd-example-row .flex-items-middle, .bd-example-row .flex-items-bottom {
+  min-height: 6rem;
+  background-color: rgba(255, 0, 0, .1);
+}
+.bd-example-row-flex-cols .row {
+  min-height: 10rem;
+  background-color: rgba(255, 0, 0, .1);
+}
+.bd-highlight {
+  background-color: rgba(128, 0, 128, .15);
+  border: 1px solid rgba(128, 0, 128, .15);
+}
+.example-container {
+  width: 800px;
+}
+
+.bd-example-container {
+  min-width: 16rem;
+  max-width: 25rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.bd-example-container-header {
+  height: 3rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+}
+.bd-example-container-sidebar {
+  float: right;
+  width: 4rem;
+  height: 8rem;
+  background-color: #8080ff;
+  border-radius: 0.25rem;
+}
+.bd-example-container-body {
+  height: 8rem;
+  margin-right: 4.5rem;
+  background-color: #f0f;
+  border-radius: 0.25rem;
+}
+.bd-example-container-fluid {
+  max-width: none;
+}
+.bd-example {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem;
+  border: solid #f7f7f9;
+  border-width: 0.2rem 0 0;
+}
+.bd-example + .highlight, .bd-example + .clipboard + .highlight {
+  margin-top: 0;
+}
+.bd-example + p {
+  margin-top: 2rem;
+}
+.bd-example .pos-f-t {
+  position: relative;
+  margin: -1rem;
+
+}
+.bd-example > .form-control + .form-control {
+  margin-top: 0.5rem;
+}
+.bd-example > .nav + .nav, .bd-example > .alert + .alert, .bd-example > .navbar + .navbar, .bd-example > .progress + .progress, .bd-example > .progress + .btn {
+  margin-top: 1rem;
+}
+.bd-example > .dropdown-menu:first-child {
+  position: static;
+  display: block;
+}
+.bd-example > .form-group:last-child {
+  margin-bottom: 0;
+}
+.bd-example > .close {
+  float: none;
+}
+.bd-example-type .table .type-info {
+  color: #999;
+  vertical-align: middle;
+}
+.bd-example-type .table td {
+  padding: 1rem 0;
+  border-color: #eee;
+}
+.bd-example-type .table tr:first-child td {
+  border-top: 0;
+}
+.bd-example-type h1, .bd-example-type h2, .bd-example-type h3, .bd-example-type h4, .bd-example-type h5, .bd-example-type h6 {
+  margin: 0;
+}
+.bd-example-bg-classes p {
+  padding: 1rem;
+}
+.bd-example > img + img {
+  margin-left: 0.5rem;
+}
+.bd-example > .btn-group {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.bd-example > .btn-toolbar + .btn-toolbar {
+  margin-top: 0.5rem;
+}
+.bd-example-control-sizing select, .bd-example-control-sizing input[type="text"] + input[type="text"] {
+  margin-top: 0.5rem;
+}
+.bd-example-form .input-group {
+  margin-bottom: 0.5rem;
+}
+.bd-example > textarea.form-control {
+  resize: vertical;
+}
+.bd-example > .list-group {
+  max-width: 400px;
+}
+
+.bd-example .fixed-top, .bd-example .sticky-top {
+  position: static;
+  margin: -1rem -1rem 1rem;
+}
+.bd-example .fixed-bottom {
+  position: static;
+  margin: 1rem -1rem -1rem;
+}
+.bd-example .pagination {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.bd-example-modal {
+  background-color: #fafafa;
+}
+.bd-example-modal .modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  display: block;
+}
+.bd-example-modal .modal-dialog {
+  left: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.modal {
+  z-index: 1072;
+}
+.modal .tooltip, .modal .popover {
+  z-index: 1073;
+}
+.modal-backdrop {
+  z-index: 1071;
+}
+.bd-example-tabs .nav-tabs {
+  margin-bottom: 1rem;
+}
+.bd-example-tooltips {
+  text-align: center;
+}
+.bd-example-tooltips > .btn {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.bs-tooltip-top-docs .arrow, .bs-tooltip-bottom-docs .arrow {
+  left: 50%;
+}
+.bs-tooltip-right-docs .arrow, .bs-tooltip-left-docs .arrow {
+  top: 50%;
+}
+.bd-example-popover-static {
+  padding-bottom: 1.5rem;
+  background-color: #f9f9f9;
+}
+.bd-example-popover-static .popover {
+  position: relative;
+  display: block;
+  float: left;
+  width: 260px;
+  margin: 1.25rem;
+}
+.bs-popover-top-docs .arrow, .bs-popover-bottom-docs .arrow {
+  left: 50%;
+}
+.bs-popover-right-docs .arrow, .bs-popover-left-docs .arrow {
+  top: 50%;
+}
+.tooltip-demo a {
+  white-space: nowrap;
+}
+.bd-example-tooltip-static .tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 10px 20px;
+  opacity: 1;
+}
+.scrollspy-example {
+  position: relative;
+  height: 200px;
+  margin-top: 0.5rem;
+  overflow: auto;
+}
+.scrollspy-example-2 {
+  position: relative;
+  height: 350px;
+  overflow: auto;
+}
+.bd-example-border-utils [class^="border"] {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  margin: 0.25rem;
+  background-color: #f5f5f5;
+  border: 1px solid;
+}
+.highlight {
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f7f7f9;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.highlight pre {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0;
+}
+.highlight pre code {
+  font-size: inherit;
+  color: gray;
+}
