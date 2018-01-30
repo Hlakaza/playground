@@ -30,11 +30,11 @@ import { ProfileComponent } from './profile/profile.component';
 const appRoutes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: StyleguideComponent
   },
   {
-    path: 'styleguide',
-    component: StyleguideComponent
+    path: 'home',
+    component: HomeComponent
   }
 ];
 
