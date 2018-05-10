@@ -28,7 +28,7 @@
         }
         &:hover, &.active{
             @include screen($large){   
-                border-bottom: 5px solid $body-color; 
+                border-color: $body-color; 
                 a{   
                     color: $primary-color;
                 }
@@ -63,9 +63,9 @@
     .navbar .col-three.grid{
         width: 98%;
        }
-    .navbar{
-        height: 100px
-    }
+    // .navbar{
+    //     // height: 100px
+    // }
 .navigation{
     position: absolute;
     background-color: #ffff;

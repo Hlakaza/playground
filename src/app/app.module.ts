@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 import { APP_BASE_HREF } from '@angular/common';
 // Services
 import { ModalService } from './services/modal.service';
+
+// Directives
+import { ModalDirective } from './directives/modal.directive';
+
 // Components
 import { AppComponent } from './app.component';
 import { ButtonsComponent } from './buttons/buttons.component';
@@ -23,19 +27,14 @@ import { StyleguideComponent } from './styleguide/styleguide.component';
 import { HomeComponent } from './home/home.component';
 import { SlotsComponent } from './slots/slots.component';
 import { BalancesComponent } from './balances/balances.component';
-import { ModalDirective } from './directives/modal.directive';
 import { InboxComponent } from './inbox/inbox.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SportsComponent } from './betway/sports/sports.component';
 
 const appRoutes: Routes = [
-  {
-    path: '',
-    component: StyleguideComponent
-  },
-  {
-    path: 'home',
-    component: HomeComponent
-  }
+  { path: '', component: StyleguideComponent },
+  { path: 'betway', component: SportsComponent },
+  { path: 'home', component: HomeComponent },
 ];
 
 @NgModule({
@@ -60,6 +59,7 @@ const appRoutes: Routes = [
     ModalDirective,
     InboxComponent,
     ProfileComponent,
+    SportsComponent,
   ],
   imports: [
     BrowserModule,

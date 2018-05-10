@@ -2,13 +2,13 @@
 @import '../core/_mixins';
 @import '../core/_variables';
 .btn {
-	padding: 12px 18px;
+	padding: 7px 20px;
 	font-size: $font-size-base;
 	display: inline-block;
 	text-align: center;
 	line-height: 1;
 	cursor: pointer;
-	border-radius: 4px;
+	border-radius: 3px;
 	position: relative;
 	vertical-align: middle;
 	text-decoration: none;
@@ -19,10 +19,6 @@
 	border: 1px solid $default-color;
 	text-transform: uppercase;
 	font-weight: $font-weight-base;
-	@include screen($medium) {
-		padding: 14px 20px;
-		font-size: $font-size-base;
-	}
 	@include hover() {
 		background-color: $default-color;
 		color: $secondary-color;

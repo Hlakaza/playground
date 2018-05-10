@@ -10,7 +10,6 @@
 	}
 }
 .row {
-	position: relative;
 	width: 100%;
 	margin: 0 auto;
 
@@ -35,6 +34,23 @@
 @each $count in $grid {
 	$index: index($grid, $count);
 	.#{$count} {
+		@if ($index == 1) {
+			&.grid,
+			&.grid {
+				@include grid($index);
+			}
+		} @else {
+			&.grid {
+				@include grid($index);
+			}
+		}
+	}
+}
+}
+@media(max-width: $large){
+@each $count in $grid {
+	$index: index($grid, $count);
+	.#{$count}.xs {
 		@if ($index == 1) {
 			&.grid,
 			&.grid {

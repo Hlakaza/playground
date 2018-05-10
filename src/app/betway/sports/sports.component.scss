@@ -1,0 +1,289 @@
+$black-color: #000;
+$white-color:               #fff;
+//* Colors *//
+$navy-blue-color:        #0054A4;
+$cyan-blue-color:        #66CAED;
+$emerald-green-color:    #439539;
+$lime-green-color:       #ACC540;
+$red-color:              #ED1C24;
+$orange-color:           #F78E1E;
+$magento-color:          #EF5BA1;
+$yellow-color:           #FFC421;
+$grey-color:             #939598;
+$dark-grey-color:        #222222;
+$purple-color:           #642282;
+
+
+// Global
+.main-wraper{
+    background-color: $black-color;
+    width: 100%;
+    height: 100%
+}
+
+// Nav
+.sticky-header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+.navbar-cont{
+    position: relative;
+    width: 96%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding-bottom: 0.7rem;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.navbar-nav{
+    display: flex;
+}
+
+.nav-link{
+    padding: 0.5rem 0.9rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1;
+    border-bottom: 2px solid transparent;
+    border-bottom-color: transparent;
+}
+
+.nav-link-active,
+.nav-link:hover{
+  color: $white-color;
+}
+.navbar-collapse{
+    margin: 10px 0
+}
+.nav-right{
+    max-width: 690px;
+    width: 100%;
+}
+
+.atd{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+}
+@media screen and (min-width:  1000px) and (max-width: 1040px){
+    .nav-right{
+        max-width: 670px;
+    }
+}
+@media (max-width: 999px){
+   .sticky-header{
+         height: 50px;
+         border-bottom: 1px solid $grey-color;
+    }
+  .navbar{
+    position: absolute;
+    left: -2%;
+    right: -2%;
+    top: 27px;
+    background-color: $black-color;
+  }
+  .navbar-nav,
+  .nav-link{
+      display: block;
+      width: 100%;
+      min-height: 48px;
+    }
+    .nav-link{
+     text-align: center;
+     border-bottom: 2px solid $grey-color;
+     padding: 0.9rem 0;
+  }
+  .navbar-brand{
+    max-width: 190px;
+    margin:0;
+    padding: 0;
+  }
+  .ham-burger span {
+    border: 2px solid $white-color;
+    background: $white-color;
+    height: 2px;
+    margin-bottom: 5px;
+    display: block;
+    width: 32px;
+}
+.ham-burger{
+    border: 0;
+    background-color: transparent;
+    display: block;
+    padding: 0;
+    margin-right: 15px;
+    &:focus{
+        outline: none;
+    }
+}
+ .navbar-brand, 
+ .ham-burger{
+    margin-top: 3px;
+}
+  
+}
+@media(max-width: 320px){
+    .navbar-brand{
+        max-width: 170px;
+        margin-top: 5px;
+    
+    }
+    .ham-burger{
+        margin-top: 4px
+    }
+}
+//forms
+.fmc-w2 {
+    width: 25%;
+}
+.fmc-w5 {
+    width: 35%;
+}
+@media(max-width: 999px){
+    .fmc-w2, 
+    .fmc-w5 {
+        width: 100%;
+    }
+}
+
+//Cards
+.card{
+    position: relative;
+    width: 100%;
+}
+.block-cont{
+  max-width: 842px;
+  max-height: 560px;
+  width: 100%;
+  height: 100%;
+}
+
+//Helpers
+.link-plain{
+    text-decoration: none;
+}
+.link-primary{
+    color: $emerald-green-color;
+}
+.link-secondary{
+    color: $navy-blue-color;
+}
+.hdr-spacing{
+    padding-top: 120px;
+}
+
+//Borders
+.bor-green,
+.bor-green-hov:hover{
+   border-color: $emerald-green-color;
+}
+.bor-blue,
+.bor-blue-hov:hover{
+   border-color: $navy-blue-color;
+}
+.bor-cyanblue,
+.bor-cyanblue-hov:hover{
+   border-color: $cyan-blue-color;
+}
+.bor-red,
+.bor-red-hov:hover{
+   border-color: $red-color;
+}
+
+//Background Colors
+.bg-black{
+    background-color: $black-color;
+}
+.bg-grey{
+    background-color: $grey-color
+}
+.bg-light-grey{
+   background-color:  #3d3d3d;
+}
+.bg-dark-grey{
+    background-color: $dark-grey-color;
+}
+.bg-white{
+   background-color: $white-color
+}
+.bg-emerald-green{
+    background-color: $emerald-green-color
+}
+.bg-lime-green{
+    background-color: $lime-green-color
+}
+.bg-navy-blue{
+    background-color: $navy-blue-color
+}
+.bg-cyan-blue{
+    background-color: $cyan-blue-color
+}
+.bg-red{
+    background-color: $red-color
+}
+.bg-magento{
+    background-color: $magento-color;
+}
+
+
+
+//Text Colors
+.txt-grey{
+    color: $grey-color
+}
+.txt-white{
+    color: $white-color
+}
+.txt-emerald-green{
+    color: $emerald-green-color
+}
+.txt-lime-green{
+    color: $lime-green-color
+}
+.txt-navy-blue{
+    color: $navy-blue-color
+}
+.txt-cyan-blue{
+    color: $cyan-blue-color
+}
+.txt-red{
+    color: $red-color;
+}
+.txt-magento{
+    color: $magento-color
+}
+.bold{
+    font-weight: bold;
+}
+
+// Possition
+
+.pos-rel{
+  position: relative
+}
+.pos-abs{
+    position: absolute
+}
+
+// Skew
+  .left-skew:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20%;
+    display: block;
+    right: 45%;
+    background: #3d3d3d;
+    -webkit-transform: skew(17deg);
+    transform: skew(17deg);
+  }
+  .left-skew{
+    height: 560px;
+    width: 35%;
+  }

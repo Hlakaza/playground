@@ -1,0 +1,64 @@
+<div class="main-wraper">
+    <header class="bg-black sticky-header sports">
+        <section class="navbar-cont">
+                    <nav class="navbar spacing-bottom spacing-top">
+                            <ul class="navbar-nav nav">
+                                <li class="nav-item"><a class="nav-link txt-grey bor-green-hov bold" routerLink="betway" title="sports">sports</a></li>
+                                <li class="nav-item"><a class="nav-link txt-grey bor-blue-hov bold" routerLink="betway/casino" title="Blog">casino</a></li>
+                                <li class="nav-item"><a class="nav-link txt-grey bor-cyanblue-hov bold" routerLink="betway/live-casino" title="casino">live casino</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link txt-grey bor-red-hov bold" routerLink="betway/vegas" title="vegas">vegas</a>
+                            </li>
+                                <li  class="nav-item"><a class="nav-link txt-grey bold" routerLink="/" title="styleguide">styleguide</a></li>
+                            </ul>
+                    </nav>
+                    <a *ngIf="!isMobile" class="atd txt-grey" routerLink="#" title="Resources">                
+                    <svg class="svg-icon-small svgicon-fix-m" xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 2000 2000"> <g transform="matrix(1 0 0 -1 37.966 1447.9)"><path d="m1792 544v832q0 13-9.5 22.5t-22.5 9.5h-1600q-13 0-22.5-9.5t-9.5-22.5v-832q0-13 9.5-22.5t22.5-9.5h1600q13 0 22.5 9.5t9.5 22.5zm128 832v-1088q0-66-47-113t-113-47h-544q0-37 16-77.5t32-71 16-43.5q0-26-19-45t-45-19h-512q-26 0-45 19t-19 45q0 14 16 44t32 70 16 78h-544q-66 0-113 47t-47 113v1088q0 66 47 113t113 47h1600q66 0 113-47t47-113z" fill="currentColor"/></g></svg>
+                            Add to desktop
+                    </a>
+                    <div class="clearfix navbar-collapse">
+                        <button class="ham-burger pull-left" *ngIf="isMobile">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <a class="pull-left navbar-brand">
+                           <img src="../assets/images/Sports_Betway_InLine.png" alt="Betway Sports Logo" class="img-responsive"/>
+                        </a>
+                        <button class="btn btn-success pull-right" *ngIf="isMobile">Login</button> 
+                        <div class="pull-right nav-right" *ngIf="!isMobile">
+                            <form class="clearfix">
+                                <div class="pull-left spacing-right fmc-w5">
+                                  <input class="form-control" name="username" type="txt" placeholder="Username"  />
+                                </div>
+                                <div class="pull-left spacing-right fmc-w5">
+                                    <input class="form-control" name="password" type="txt" placeholder="Password"  />
+                                </div>
+                                <div class="pull-left fmc-w2">
+                                  <button class="btn btn-success btn-expanded">Login</button>
+                                </div>                              
+                            </form>
+                            <div class="clearfix">
+                                    <a class="link-plain txt-white pull-left spacing-right fmc-w5">Forgot Password</a>
+                                    <a class="link-plain txt-white pull-left spacing-right fmc-w5">Register</a>
+                            </div>
+                        </div>         
+                    </div>
+        </section>
+    </header>
+    <div class="bg-dark-grey hdr-spacing">
+       <div class="container">
+           <img class="img-responsive" src="./assets/images/BetwayLATAM_Home.jpg" alt=""/>
+           <!-- Promotion BLocks -->
+           <div class="flex-container">
+               <div class="flex-item block-cont bg-black pos-rel">
+                 <div style="height: 560px" class="left-skew bg-light-grey"></div>
+               </div>
+               <div class="flex-item  block-cont bg-black pos-rel">
+                    <div style="height: 560px"></div>
+               </div>
+           </div>
+       </div>
+
+    </div>
+</div>

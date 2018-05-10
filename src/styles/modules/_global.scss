@@ -2,14 +2,29 @@
 @import'../core/variables';
 /* Global styles */
 a {
-	text-decoration: underline;
 	transition: .2s ease-out;
-	transition-property: background-color, color;
-	color: $primary-color;
 	cursor: pointer;
-
-	@include hover() {
-		color: $hover-color;
-	}
 }
-
+.svg-icon {
+    width: 30px;
+    height: 30px;
+}
+.svg-icon-xs {
+	height: 13px;
+    width: 13px;
+}
+.svg-icon-small {
+	height: 20px;
+    width: 20px;
+}
+.svg-icon-medium {
+	width: 40px;
+    height: 40px;
+}
+.svg-icon-large {
+	width: 100px;
+    height: 100px;
+}
+.svgicon-fix-m{
+    vertical-align: middle;
+}
